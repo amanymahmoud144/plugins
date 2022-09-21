@@ -28,20 +28,20 @@
  *
  */
 
-namespace OPNsense\HelloWorld\Api;
+namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiControllerBase;
-use OPNsense\HelloWorld\HelloWorld;
+use OPNsense\ICAPeg\ICAPeg;
 use OPNsense\Core\Config;
 
 /**
- * Class SettingsController Handles settings related API actions for the HelloWorld module
- * @package OPNsense\Helloworld
+ * Class SettingsController Handles settings related API actions for the ICAPeg module
+ * @package OPNsense\ICAPeg
  */
 class SettingsController extends ApiControllerBase
 {
     /**
-     * retrieve HelloWorld general settings
+     * retrieve ICAPeg general settings
      * @return array general settings
      * @throws \OPNsense\Base\ModelException
      * @throws \ReflectionException
@@ -51,14 +51,14 @@ class SettingsController extends ApiControllerBase
         // define list of configurable settings
         $result = array();
         if ($this->request->isGet()) {
-            $mdlHelloWorld = new HelloWorld();
-            $result['helloworld'] = $mdlHelloWorld->getNodes();
+            $mdlICAPeg = new ICAPeg();
+            $result['icapeg'] = $mdlICAPeg->getNodes();
         }
         return $result;
     }
 
     /**
-     * update HelloWorld settings
+     * update ICAPeg settings
      * @return array status
      * @throws \OPNsense\Base\ModelException
      * @throws \ReflectionException
@@ -68,21 +68,21 @@ class SettingsController extends ApiControllerBase
         $result = array("result" => "failed");
         if ($this->request->isPost()) {
             // load model and update with provided data
-            $mdlHelloWorld = new HelloWorld();
-            $mdlHelloWorld->setNodes($this->request->getPost("helloworld"));
+            $mdlICAPeg = new ICAPeg();
+            $mdlICAPeg->setNodes($this->request->getPost("icapeg"));
 
             // perform validation
-            $valMsgs = $mdlHelloWorld->performValidation();
+            $valMsgs = $mdlICAPeg->performValidation();
             foreach ($valMsgs as $field => $msg) {
                 if (!array_key_exists("validations", $result)) {
                     $result["validations"] = array();
                 }
-                $result["validations"]["helloworld." . $msg->getField()] = $msg->getMessage();
+                $result["validations"]["icapeg." . $msg->getField()] = $msg->getMessage();
             }
 
             // serialize model to config and save
             if ($valMsgs->count() == 0) {
-                $mdlHelloWorld->serializeToConfig();
+                $mdlICAPeg->serializeToConfig();
                 Config::getInstance()->save();
                 $result["result"] = "saved";
             }

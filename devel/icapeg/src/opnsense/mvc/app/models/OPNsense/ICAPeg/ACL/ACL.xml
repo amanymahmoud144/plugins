@@ -1,0 +1,9 @@
+<acl>
+    <page-user-icapeg>
+        <name>Lobby: Hello ICAPeg</name>
+        <patterns>
+            <pattern>ui/icapeg/*</pattern>
+            <pattern>api/icapeg/*</pattern>
+        </patterns>
+    </page-user-icapeg>
+</acl>

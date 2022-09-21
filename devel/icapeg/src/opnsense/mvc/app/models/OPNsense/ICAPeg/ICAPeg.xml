@@ -1,7 +1,7 @@
 <model>
-    <mount>//OPNsense/helloworld</mount>
+    <mount>//OPNsense/icapeg</mount>
     <description>
-        the OPNsense "Hello World" application
+        the OPNsense "Hello ICAPeg" application
     </description>
     <items>
         <!-- container -->

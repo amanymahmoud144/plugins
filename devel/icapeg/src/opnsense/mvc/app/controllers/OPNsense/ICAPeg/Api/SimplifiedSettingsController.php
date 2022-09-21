@@ -28,16 +28,16 @@
  *
  */
 
-namespace OPNsense\HelloWorld\Api;
+namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
 
 /**
- * a simplified settings controller for our HelloWorld app, uses our ApiMutableModelControllerBase type
- * @package OPNsense\Helloworld
+ * a simplified settings controller for our ICAPeg app, uses our ApiMutableModelControllerBase type
+ * @package OPNsense\ICAPeg
  */
 class SimplifiedSettingsController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelName = 'helloworld';
-    protected static $internalModelClass = 'OPNsense\HelloWorld\HelloWorld';
+    protected static $internalModelName = 'icapeg';
+    protected static $internalModelClass = 'OPNsense\ICAPeg\ICAPeg';
 }

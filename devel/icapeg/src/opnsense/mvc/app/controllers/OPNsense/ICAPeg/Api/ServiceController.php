@@ -28,19 +28,46 @@
  *
  */
 
-namespace OPNsense\HelloWorld;
+namespace OPNsense\ICAPeg\Api;
+
+use OPNsense\Base\ApiControllerBase;
+use OPNsense\Core\Backend;
 
 /**
- * Class IndexController
- * @package OPNsense\HelloWorld
+ * Class ServiceController
+ * @package OPNsense\Cron
  */
-class IndexController extends \OPNsense\Base\IndexController
+class ServiceController extends ApiControllerBase
 {
-    public function indexAction()
+    /**
+     * reconfigure icapeg
+     */
+    public function reloadAction()
     {
-        // pick the template to serve to our users.
-        $this->view->pick('OPNsense/HelloWorld/index');
-        // fetch form data "general" in
-        $this->view->generalForm = $this->getForm("general");
+        $status = "failed";
+        if ($this->request->isPost()) {
+            $backend = new Backend();
+            $bckresult = trim($backend->configdRun('template reload OPNsense/ICAPeg'));
+            if ($bckresult == "OK") {
+                $status = "ok";
+            }
+        }
+        return array("status" => $status);
+    }
+
+    /**
+     * test ICAPeg
+     */
+    public function testAction()
+    {
+        if ($this->request->isPost()) {
+            $backend = new Backend();
+            $bckresult = json_decode(trim($backend->configdRun("icapeg test")), true);
+            if ($bckresult !== null) {
+                // only return valid json type responses
+                return $bckresult;
+            }
+        }
+        return array("message" => "unable to run config action");
     }
 }

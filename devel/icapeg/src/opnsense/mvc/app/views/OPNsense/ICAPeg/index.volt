@@ -26,20 +26,20 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1> Hello Fron ICAPeg Plugin </h1>
+<h1> Hello From ICAPeg Plugin </h1>
 
 <script>
     $( document ).ready(function() {
-        var data_get_map = {'frm_GeneralSettings':"/api/helloworld/settings/get"};
+        var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map).done(function(data){
             // place actions to run after load, for example update form styles.
         });
 
         // link save button to API set action
         $("#saveAct").click(function(){
-            saveFormToEndpoint(url="/api/helloworld/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
-                ajaxCall(url="/api/helloworld/service/reload", sendData={},callback=function(data,status) {
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
                 });
             });
@@ -47,7 +47,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
         $("#testAct").click(function(){
             $("#responseMsg").removeClass("hidden");
-            ajaxCall(url="/api/helloworld/service/test", sendData={},callback=function(data,status) {
+            ajaxCall(url="/api/icapeg/service/test", sendData={},callback=function(data,status) {
                 // action to run after reload
                 $("#responseMsg").html(data['message']);
             });
