@@ -7,10 +7,10 @@
         <!-- container -->
         <general>
             <!-- fields -->
-            <PortNum type="BooleanField">
+            <WritingLogsToConsole type="WritingLogsToConsole">
                 <default>1</default>
                 <Required>Y</Required>
-            </PortNum>
+            </WritingLogsToConsole>
             <SMTPHost type="NetworkField">
                 <Required>Y</Required>
             </SMTPHost>
