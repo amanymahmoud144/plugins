@@ -26,7 +26,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1> Hello From ICAPeg miop </h1>
+<h1> Configuration app section </h1>
 
 <script>
     $( document ).ready(function() {
