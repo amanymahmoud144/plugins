@@ -1,6 +1,6 @@
 <acl>
     <page-user-icapeg>
-        <name>Lobby: Hello ICAPeg</name>
+        <name>Services: ICAPeg</name>
         <patterns>
             <pattern>ui/icapeg/*</pattern>
             <pattern>api/icapeg/*</pattern>
