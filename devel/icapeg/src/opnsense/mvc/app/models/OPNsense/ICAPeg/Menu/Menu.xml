@@ -1,5 +1,5 @@
 <menu>
     <Lobby>
-        <ICAPeg VisibleName="Hello ICAPeg" cssClass="fa fa-comment-o fa-fw" url="/ui/icapeg"/>
+        <ICAPeg VisibleName="ICAPeg" cssClass="fa fa-comment-o fa-fw" url="/ui/icapeg"/>
     </Lobby>
 </menu>
