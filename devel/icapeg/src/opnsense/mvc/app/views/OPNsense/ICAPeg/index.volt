@@ -26,7 +26,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1> Configuration app section </h1>
+<h1>App section configuration  </h1>
 
 <script>
     $( document ).ready(function() {
