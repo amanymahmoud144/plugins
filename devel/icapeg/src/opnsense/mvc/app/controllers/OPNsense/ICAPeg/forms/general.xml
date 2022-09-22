@@ -3,7 +3,7 @@
         <id>icapeg.general.PortNum</id>
         <label>Port number</label>
         <type>text</type>
-        <help><![CDATA[port of ICAPeg]]></help>
+        <help><![CDATA[default port of ICAPeg]]></help>
         <help>1344</help>
     </field>
     <field>
@@ -19,18 +19,27 @@
         <help>Disable this feature</help>
     </field>
     <field>
-        <id>icapeg.general.FromEmail</id>
-        <label>Email (from)</label>
+        <id>icapeg.general.AddNewService</id>
+        <label>Add New Service</label>
         <type>text</type>
+        <help><![CDATA[ignore this field if you didn't add new service to the code]]></help>
+    </field>
+        <field>
+        <id>icapeg.general.DebuggingHeaders</id>
+        <label>Writing logs to console</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service</help>
     </field>
     <field>
-        <id>icapeg.general.ToEmail</id>
-        <label>Email (to)</label>
+        <id>icapeg.general.WebServerHost</id>
+        <label>Web server host</label>
         <type>text</type>
+        <help><![CDATA[the host of web server which reponse with html message]]></help>
     </field>
     <field>
-        <id>icapeg.general.Description</id>
-        <label>Description</label>
+        <id>icapeg.general.WebServerHost</id>
+        <label>Web server host</label>
         <type>text</type>
+        <help><![CDATA[the endpoint of web server which reponse with html message]]></help>
     </field>
 </form>
