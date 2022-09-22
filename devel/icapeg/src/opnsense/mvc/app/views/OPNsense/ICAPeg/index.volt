@@ -26,7 +26,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1> Hello From ICAPeg Plugin </h1>
+<h1> Hello From ICAPeg miop </h1>
 
 <script>
     $( document ).ready(function() {
