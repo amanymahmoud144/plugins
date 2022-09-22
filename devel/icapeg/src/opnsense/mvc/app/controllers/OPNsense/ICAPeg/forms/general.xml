@@ -20,7 +20,7 @@
     </field>
     <field>
         <id>icapeg.general.DebuggingHeaders</id>
-        <label>Writing logs to console</label>
+        <label>Debugging headers</label>
         <type>checkbox</type>
         <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service</help>
     </field>
