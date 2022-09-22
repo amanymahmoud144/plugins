@@ -19,12 +19,6 @@
         <help>Disable this feature</help>
     </field>
     <field>
-        <id>icapeg.general.AddNewService</id>
-        <label>Add New Service</label>
-        <type>text</type>
-        <help><![CDATA[ignore this field if you didn't add new service to the code]]></help>
-    </field>
-        <field>
         <id>icapeg.general.DebuggingHeaders</id>
         <label>Writing logs to console</label>
         <type>checkbox</type>
