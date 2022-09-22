@@ -11,13 +11,6 @@
         <label>Log Level</label>
         <type>dropdown</type>
         <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
-        <make>Acura</make>
-        <make>Aston Martin</make>
-        <make>Audi</make>
-        <make>Bently</make>
-        <make>BMW</make>
-        <make>Buick</make>
-        <make>Cadillac</make>
     </field>
     <field>
         <id>icapeg.general.WritingLogsToConsole</id>
