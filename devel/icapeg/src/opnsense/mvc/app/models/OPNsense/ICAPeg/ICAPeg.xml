@@ -7,24 +7,26 @@
         <!-- container -->
         <general>
             <!-- fields -->
+            <PortNum type="TextField">
+                <default>1344</default>
+                <Required>Y</Required>
+            </PortNum>
             <WritingLogsToConsole type="BooleanField">
-                <default>1</default>
+                <default>0</default>
                 <Required>Y</Required>
             </WritingLogsToConsole>
-            <SMTPHost type="NetworkField">
+            <DebuggingHeaders type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
-            </SMTPHost>
-            <FromEmail type="EmailField">
-                <default>sample@example.com</default>
+            </DebuggingHeaders>
+            <WebServerHost type="TextField">
+                <default>http://localhost</default>
                 <Required>Y</Required>
-            </FromEmail>
-            <ToEmail type="EmailField">
+            </WebServerHost>
+            <WebServerEndpoint type="TextField">
+                <default>/service/message</default>
                 <Required>Y</Required>
-                <ValidationMessage>please specify a valid email address</ValidationMessage>
-            </ToEmail>
-            <Description type="TextField">
-                <Required>Y</Required>
-            </Description>
+            </WebServerEndpoint>
         </general>
     </items>
 </model>
