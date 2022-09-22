@@ -1,15 +1,22 @@
 <form>
     <field>
-        <id>icapeg.general.Enabled</id>
-        <label>enabled</label>
-        <type>checkbox</type>
-        <help>Enable this feature</help>
-    </field>
-    <field>
         <id>icapeg.general.PortNum</id>
         <label>Port number</label>
-        <type>text</type>
+        <type>number</type>
         <help><![CDATA[port of ICAPeg]]></help>
+        <help>1344</help>
+    </field>
+    <field>
+        <id>icapeg.general.LogLevel</id>
+        <label>Log Level</label>
+        <type>text</type>
+        <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
+    </field>
+    <field>
+        <id>icapeg.general.WritingLogsToConsole</id>
+        <label>Writing logs to console</label>
+        <type>checkbox</type>
+        <help>Disable this feature</help>
     </field>
     <field>
         <id>icapeg.general.FromEmail</id>
