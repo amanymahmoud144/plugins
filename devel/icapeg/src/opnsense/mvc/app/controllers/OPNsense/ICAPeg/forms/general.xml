@@ -2,7 +2,7 @@
     <field>
         <id>icapeg.general.PortNum</id>
         <label>Port number</label>
-        <type>number</type>
+        <type>text</type>
         <help><![CDATA[port of ICAPeg]]></help>
         <help>1344</help>
     </field>
