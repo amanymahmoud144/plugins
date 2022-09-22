@@ -6,11 +6,10 @@
         <help>Enable this feature</help>
     </field>
     <field>
-        <id>icapeg.general.SMTPHost</id>
-        <label>SMTPHost</label>
+        <id>icapeg.general.PortNum</id>
+        <label>Port number</label>
         <type>text</type>
-        <help><![CDATA[ip address of the mail host]]></help>
-        <hint>choose a valid IPv4/v6 address</hint>
+        <help><![CDATA[port of ICAPeg]]></help>
     </field>
     <field>
         <id>icapeg.general.FromEmail</id>
