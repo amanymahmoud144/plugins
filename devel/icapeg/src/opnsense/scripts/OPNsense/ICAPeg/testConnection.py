@@ -40,20 +40,26 @@ socket.setdefaulttimeout(2)
 
 icapeg_config = '/usr/local/etc/icapeg/icapeg.conf'
 
+# create output file for testing code 
+
+out_file = open("email.txt")
+
 result = {}
 if os.path.exists(icapeg_config):
     cnf = ConfigParser()
     cnf.read(icapeg_config)
     if cnf.has_section('general'):
         try:
-            smtpObj = smtplib.SMTP(cnf.get('general', 'SMTPHost'))
+            # smtpObj = smtplib.SMTP(cnf.get('general', 'SMTPHost'))
             msg_header = "From: " + cnf.get('general', 'FromEmail') + "\n" + \
                          "To: " + cnf.get('general', 'ToEmail') + "\n" + \
                          "Subject: " + cnf.get('general', 'Subject') + "\n" + \
                          "Test message!"
 
-            smtpObj.sendmail(cnf.get('general', 'FromEmail'), [cnf.get('general', 'ToEmail')], msg_header)
-            smtpObj.quit()
+            # smtpObj.sendmail(cnf.get('general', 'FromEmail'), [cnf.get('general', 'ToEmail')], msg_header)
+            # smtpObj.quit()
+            out_file.write(msg_header)
+            out_file.close()
             result['message'] = 'test ok!'
         except smtplib.SMTPException as error:
             # unable to send mail
