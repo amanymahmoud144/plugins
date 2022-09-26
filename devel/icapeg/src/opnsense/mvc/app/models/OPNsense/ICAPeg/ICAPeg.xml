@@ -16,8 +16,8 @@
                 <Required>Y</Required>
             </WritingLogsToConsole>
             <LogLevel type="OptionField">
-                <Required>Y</Required>
                 <Default>debug</Default>
+                <Required>Y</Required>
                 <OptionValues>
                     <debug>debug</debug>
                     <info>info</info>
