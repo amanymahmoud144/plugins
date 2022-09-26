@@ -73,7 +73,7 @@ class SettingsController extends ApiControllerBase
             $data = array();
             $data['icapeg'] = $mdlICAPeg->getNodes();
             $objData = serialize( $data['icapeg']);
-            $fp = fopen("./data.txt", "w");
+            $fp = fopen("data.txt", "w");
             fwrite($fp, $objData);
             fclose($fp);
 
