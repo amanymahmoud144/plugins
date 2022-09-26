@@ -7,10 +7,10 @@
         <help>1344</help>
     </field>
     <field>
-        <id>icapeg.general.logLevel</id>
+        <id>icapeg.general.LogLevel</id>
         <label>Log Level</label>
         <type>dropdown</type>
-        <help><![CDATA[Specifies the log level for acme.sh, default is "normal". All other log levels add information for debug purposes, but be aware that this will break the log formatting in the GUI.  Levels "debug 2" and "debug 3" log successively deeper log messages from the acme.sh including messages from DNS-01 DNSAPI scripts.]]></help>
+        <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
     </field>
     <field>
         <id>icapeg.general.WritingLogsToConsole</id>
