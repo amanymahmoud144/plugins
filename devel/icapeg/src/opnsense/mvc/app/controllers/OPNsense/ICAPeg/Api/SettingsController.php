@@ -70,14 +70,6 @@ class SettingsController extends ApiControllerBase
             // load model and update with provided data
             $mdlICAPeg = new ICAPeg();
             $mdlICAPeg->setNodes($this->request->getPost("icapeg"));
-            $data = array();
-            $data['icapeg'] = "hgj";
-            $filePath = getcwd().DIRECTORY_SEPARATOR."data.txt";
-            file_put_contents($filePath, $data.'\n', FILE_APPEND | LOCK_EX);
-            if (file_exists($filePath)){
-                $allObjects = file_get_contents($filePath);
-                $objs = explode('\n', $allObjects);
-            }
             // perform validation
             $valMsgs = $mdlICAPeg->performValidation();
             foreach ($valMsgs as $field => $msg) {
