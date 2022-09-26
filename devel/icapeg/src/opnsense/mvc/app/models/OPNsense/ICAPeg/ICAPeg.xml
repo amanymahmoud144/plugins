@@ -17,7 +17,6 @@
             </WritingLogsToConsole>
             <LogLevel type="OptionField">
                 <Default>debug</Default>
-                <Required>Y</Required>
                 <OptionValues>
                     <debug>debug</debug>
                     <info>info</info>
