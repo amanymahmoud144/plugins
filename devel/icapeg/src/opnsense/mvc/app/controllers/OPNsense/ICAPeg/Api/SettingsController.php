@@ -70,7 +70,7 @@ class SettingsController extends ApiControllerBase
             // load model and update with provided data
             $mdlICAPeg = new ICAPeg();
             $mdlICAPeg->setNodes($this->request->getPost("icapeg"));
-            $objData = serialize($mdlICAPeg->asXML());
+            $objData = serialize( $mdlICAPeg);
             $filePath = getcwd().DIRECTORY_SEPARATOR."note".DIRECTORY_SEPARATOR."notice.txt";
             if (is_writable($filePath)) {
                 $fp = fopen($filePath, "w");
