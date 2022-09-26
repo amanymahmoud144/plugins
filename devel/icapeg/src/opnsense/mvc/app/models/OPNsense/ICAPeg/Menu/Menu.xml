@@ -1,5 +1,5 @@
 <menu>
     <Services>
-        <ICAPeg VisibleName="ICAPeg" cssClass="gg-scan" url="/ui/icapeg"/>
+        <ICAPeg VisibleName="ICAPeg" cssClass="fa fa-plug" url="/ui/icapeg"/>
     </Services>
 </menu>
