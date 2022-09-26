@@ -1,6 +1,6 @@
 <menu>
     <Services>
-        <ClamAV cssClass="fa fa-stethoscope">
+        <ClamAV cssClass="fa fa-plug">
             <Configuration order="10" url="/ui/clamav/general/index"/>
             <LogFile VisibleName="Log / Clamd" order="20" url="/ui/diagnostics/log/clamav/clamd"/>
             <LogFile VisibleName="Log / Freshclam" order="30" url="/ui/diagnostics/log/clamav/freshclam"/>
