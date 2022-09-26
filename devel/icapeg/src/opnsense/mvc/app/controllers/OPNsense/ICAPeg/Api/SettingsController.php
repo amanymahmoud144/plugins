@@ -72,14 +72,9 @@ class SettingsController extends ApiControllerBase
             $mdlICAPeg->setNodes($this->request->getPost("icapeg"));
             $result = array();
             $result['icapeg'] = $mdlICAPeg->getNodes();
-            $objData = serialize( $result['icapeg']);
-            $filePath = getcwd().DIRECTORY_SEPARATOR."note".DIRECTORY_SEPARATOR."notice.txt";
-            if (is_writable($filePath)) {
-                $fp = fopen($filePath, "w");
-                fwrite($fp, $objData);
-                fclose($fp);
-            }
-
+            $fp = fopen('data.txt', 'w');
+            fwrite($fp, $result['icapeg']);
+            fclose($fp);
             // perform validation
             $valMsgs = $mdlICAPeg->performValidation();
             foreach ($valMsgs as $field => $msg) {
