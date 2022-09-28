@@ -11,10 +11,6 @@
                 <default>1344</default>
                 <Required>Y</Required>
             </PortNum>
-            <WritingLogsToConsole type="BooleanField">
-                <default>0</default>
-                <Required>Y</Required>
-            </WritingLogsToConsole>
             <LogLevel type="OptionField">
                 <Default>debug</Default>
                 <Required>Y</Required>
@@ -25,6 +21,10 @@
                     <fatal>fatal</fatal>
                 </OptionValues>
             </LogLevel>
+            <WritingLogsToConsole type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </WritingLogsToConsole>
             <DebuggingHeaders type="BooleanField">
                 <default>1</default>
                 <Required>Y</Required>
