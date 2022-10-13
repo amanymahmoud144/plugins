@@ -52,8 +52,8 @@ class ServiceController extends ApiControllerBase
                 $status = "ok";
             }
         }
-//         return array("status" => $status);
-        return array("message" => "reloaaaald");
+        return array("status" => $status);
+//         return array("message" => "reloaaaald");
     }
 
     /**
