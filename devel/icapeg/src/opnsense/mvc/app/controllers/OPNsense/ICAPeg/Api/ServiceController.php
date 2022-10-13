@@ -44,6 +44,9 @@ class ServiceController extends ApiControllerBase
      */
     public function reloadAction()
     {
+        echo '<script type="text/javascript">
+       window.onload = function () { alert("Welcome"); } 
+                </script>'; 
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
