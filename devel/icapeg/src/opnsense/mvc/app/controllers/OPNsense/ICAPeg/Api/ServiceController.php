@@ -44,6 +44,12 @@ class ServiceController extends ApiControllerBase
      */
     public function reloadAction()
     {
+        $myfile = fopen("/root/reload.txt", "w") or die("Unable to open file!");
+        $txt = "mahmoud\n";
+        fwrite($myfile, $txt);
+        $txt = "Jane Doe\n";
+        fwrite($myfile, $txt);
+        fclose($myfile);
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
