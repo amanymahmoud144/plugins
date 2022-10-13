@@ -1,0 +1,14 @@
+- hosts: all
+  gather_facts: false
+  tasks:
+    - package:
+        name: git
+        state: present
+    - package:
+        name: go
+        state: present
+    - name: ensure that git repo checkedout 
+      git:
+        repo: 'https://github.com/MahmoudRabee/plugins'
+        dest: /srv/checkout
+    - command: chdir=/srv/checkout/devel/icapeg/ make upgrade

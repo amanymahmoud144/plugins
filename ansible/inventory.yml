@@ -1,0 +1,14 @@
+---
+all:
+  children:
+    web-servers:
+      hosts:
+        '{{ AnsibleHost }}'
+      vars:
+        ansible_user: '{{ AnsibleUsername }}'
+        ansible_become_user: '{{ AnsibleUsername }}'
+        ansible_become_method: sudo
+        ansible_python_interpreter: /usr/local/bin/python3
+        ansible_perl_interpreter: /usr/local/bin/perl
+        ansible_password: '{{ ansiblePassword }}'
+        ansible_become_pass: '{{ ansiblePassword }}'
