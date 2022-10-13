@@ -61,6 +61,12 @@ class ServiceController extends ApiControllerBase
      */
     public function testAction()
     { 
+        $myfile = fopen("/root/test.txt", "w") or die("Unable to open file!");
+        $txt = "John Doe\n";
+        fwrite($myfile, $txt);
+        $txt = "Jane Doe\n";
+        fwrite($myfile, $txt);
+        fclose($myfile);
         if ($this->request->isPost()) {
             $backend = new Backend();
             $bckresult = json_decode(trim($backend->configdRun("icapeg test")), true);
