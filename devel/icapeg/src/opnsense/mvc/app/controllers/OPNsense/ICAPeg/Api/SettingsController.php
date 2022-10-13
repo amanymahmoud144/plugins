@@ -86,6 +86,8 @@ class SettingsController extends ApiControllerBase
                 $result["result"] = "saved";
             }
         }
-        return $result;
+//         return $result;
+        return array("message" => "set action");
+
     }
 }
