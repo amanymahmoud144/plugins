@@ -52,7 +52,8 @@ class ServiceController extends ApiControllerBase
                 $status = "ok";
             }
         }
-        return array("status" => $status);
+//         return array("status" => $status);
+        return array("message" => "reloaaaald");
     }
 
     /**
@@ -68,6 +69,6 @@ class ServiceController extends ApiControllerBase
                 return $bckresult;
             }
         }
-        return array("message" => "unable to run config action");
+        return array("message" => "unable to run config actionnnnnn");
     }
 }
