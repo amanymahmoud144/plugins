@@ -4,8 +4,7 @@
     - package:
         name: git
         state: present
-    - package:
-        name: go
+
         state: present
     - name: ensure that git repo checkedout 
       git:
