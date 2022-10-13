@@ -60,10 +60,7 @@ class ServiceController extends ApiControllerBase
      * test ICAPeg
      */
     public function testAction()
-    {
-        echo '<script type="text/javascript">
-           window.onload = function () { alert("Welcome"); } 
-                </script>'; 
+    { 
         if ($this->request->isPost()) {
             $backend = new Backend();
             $bckresult = json_decode(trim($backend->configdRun("icapeg test")), true);
