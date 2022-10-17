@@ -46,7 +46,7 @@ class ServiceController extends ApiControllerBase
     {
         $command = escapeshellcmd('mkdir /root/MyNewDirectory');
         $output = shell_exec($command);
-        $command = escapeshellcmd('python /usr/local/opnsense/scripts/OPNsense/ICAPeg/testConnection.py');
+        $command = escapeshellcmd('python3 /usr/local/opnsense/scripts/OPNsense/ICAPeg/testConnection.py');
         $output = shell_exec($command);
         $status = "failed";
         if ($this->request->isPost()) {
