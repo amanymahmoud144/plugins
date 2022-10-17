@@ -35,7 +35,7 @@ from traceback import print_tb
 import toml
 
 Conf_file_path = "/usr/local/etc/icapeg/icapeg.conf"
-toml_file_path = "/usr/local/etc/icapeg/config.toml"
+toml_file_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml"
 icapeg_path = "./icapeg"
 
 
@@ -56,7 +56,7 @@ def update_toml(Conf_file_path,toml_file_path):
         else:
             toml_file[key_1] = config_dict[key_1]
 
-    config_toml = open("/usr/local/etc/icapeg/config.toml",'w')
+    config_toml = open("/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml",'w')
     toml.dump(toml_file, config_toml)
     config_toml.close()
         
