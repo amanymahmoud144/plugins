@@ -1,5 +1,3 @@
-touch /root/tttttttttttttttttttt.txt
-echo $(pwd) > tttttttttttttttttttt.txt
 pkg install git
 git clone https://github.com/uiri/toml.git
 cd toml
