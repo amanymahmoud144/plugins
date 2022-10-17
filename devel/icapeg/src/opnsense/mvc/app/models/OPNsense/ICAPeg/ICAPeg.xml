@@ -29,14 +29,6 @@
                 <default>1</default>
                 <Required>Y</Required>
             </DebuggingHeaders>
-            <WebServerHost type="TextField">
-                <default>http://localhost</default>
-                <Required>Y</Required>
-            </WebServerHost>
-            <WebServerEndpoint type="TextField">
-                <default>/service/message</default>
-                <Required>Y</Required>
-            </WebServerEndpoint>
-        </general>
+         </general>
     </items>
 </model>
