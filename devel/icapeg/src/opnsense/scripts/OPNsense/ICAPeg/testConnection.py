@@ -29,7 +29,42 @@
 
     perform some tests for the icapeg application
 """
+import subprocess
+import sys
+from traceback import print_tb
+import toml
 
-f = open("/root/testpython.txt", "w")
-f.write("Ahhhhhhmeddfdfsdfsdsdfsd")
-f.close()
+Conf_file_path = "/usr/local/etc/icapeg/icapeg.conf"
+toml_file_path = "./config.toml"
+icapeg_path = "./icapeg"
+
+
+def main():
+    
+    update_toml(Conf_file_path,toml_file_path)
+#     restart_icapeg(icapeg_path)
+
+def update_toml(Conf_file_path,toml_file_path):
+    toml_file = toml.load(toml_file_path) 
+    conf_file = open(Conf_file_path, 'r')
+    toml_string = conf_file.read()
+    config_dict = toml.loads(toml_string)
+    for key_1 in config_dict:
+        if type(config_dict[key_1]) is dict:
+            for key_2 in config_dict[key_1]:
+                toml_file[key_1][key_2] = config_dict[key_1][key_2]
+        else:
+            toml_file[key_1] = config_dict[key_1]
+
+    config_toml = open("./config.toml",'w')
+    toml.dump(toml_file, config_toml)
+    config_toml.close()
+        
+
+
+def restart_icapeg(icapeg_path):
+    subprocess.run(['kill -9 $(pidof icapeg)'], shell=True)
+    subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
+
+
+main()
