@@ -44,7 +44,7 @@ class ServiceController extends ApiControllerBase
      */
     public function reloadAction()
     {
-        $command = escapeshellcmd('mkdir /root/MyNewDirectory');
+        $command = escapeshellcmd('pkg install py38-pip && pip install toml');
         $output = shell_exec($command);
         $command = escapeshellcmd('python3 /usr/local/opnsense/scripts/OPNsense/ICAPeg/testConnection.py');
         $output = shell_exec($command);
