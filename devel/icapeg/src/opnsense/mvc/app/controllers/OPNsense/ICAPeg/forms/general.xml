@@ -24,16 +24,5 @@
         <type>checkbox</type>
         <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service</help>
     </field>
-    <field>
-        <id>icapeg.general.WebServerHost</id>
-        <label>Web server host</label>
-        <type>text</type>
-        <help><![CDATA[the host of web server which reponse with html message]]></help>
-    </field>
-    <field>
-        <id>icapeg.general.WebServerEndpoint</id>
-        <label>Web server endpoint</label>
-        <type>text</type>
-        <help><![CDATA[the endpoint of web server which reponse with html message]]></help>
-    </field>
+     
 </form>
