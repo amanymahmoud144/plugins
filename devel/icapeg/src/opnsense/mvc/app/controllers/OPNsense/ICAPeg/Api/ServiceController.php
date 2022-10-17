@@ -44,12 +44,10 @@ class ServiceController extends ApiControllerBase
      */
     public function reloadAction()
     {
-        $myfile = fopen("/root/reload.txt", "w") or die("Unable to open file!");
-        $txt = "mahmoud\n";
-        fwrite($myfile, $txt);
-        $txt = "Jane Doe\n";
-        fwrite($myfile, $txt);
-        fclose($myfile);
+        $command = escapeshellcmd('pip install toml');
+        $output = shell_exec($command);
+        $command = escapeshellcmd('python /usr/local/opnsense/scripts/OPNsense/ICAPeg/testConnection.py');
+        $output = shell_exec($command);
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
