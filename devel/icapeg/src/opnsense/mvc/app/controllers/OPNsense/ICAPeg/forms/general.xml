@@ -13,7 +13,7 @@
         <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
     </field>
     <field>
-		<id> OPNsense.icapeg.general.ADKerberosImplementation</id>
+		<id> ICAPeg.ADKerberosImplementation</id>
 		<label>AD Kerberos implementation</label>
 		<type>dropdown</type>
 		<help>Select Windows Server version for AD controller</help>
