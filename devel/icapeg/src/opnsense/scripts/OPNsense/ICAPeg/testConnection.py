@@ -63,6 +63,7 @@ def update_toml(Conf_file_path,toml_file_path):
 
 
 def restart_icapeg(icapeg_path):
+    subprocess.run(['touch ffffffffffff'], shell=True)
     subprocess.run(['chmod +x ' + icapeg_path], shell=True)
     subprocess.run(['killall -9 icapeg || true'], shell=True)
     subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
