@@ -15,6 +15,7 @@
                 <Default>debug</Default>
                 <Required>Y</Required>
                 <OptionValues>
+                    <opt1 value='1'>option1</opt1>
                     <debug>debug</debug>
                     <info>info</info>
                     <error>error</error>
