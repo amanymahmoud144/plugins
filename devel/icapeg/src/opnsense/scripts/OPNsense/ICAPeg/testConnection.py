@@ -36,13 +36,13 @@ import toml
 
 Conf_file_path = "/usr/local/etc/icapeg/icapeg.conf"
 toml_file_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml"
-icapeg_path = "./icapeg"
+icapeg_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/icapeg"
 
 
 def main():
     
     update_toml(Conf_file_path,toml_file_path)
-#     restart_icapeg(icapeg_path)
+    restart_icapeg(icapeg_path)
 
 def update_toml(Conf_file_path,toml_file_path):
     toml_file = toml.load(toml_file_path) 
