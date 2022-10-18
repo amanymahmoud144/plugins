@@ -12,7 +12,7 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <Default>debug</Default>
+                <default>debug</default>
                 <Required>Y</Required>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
