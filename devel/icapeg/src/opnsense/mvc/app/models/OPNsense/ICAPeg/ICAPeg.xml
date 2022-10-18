@@ -14,13 +14,6 @@
             <LogLevel type="OptionField">
                 <Default>debug</Default>
                 <Required>Y</Required>
-                <OptionValues>
-                    <opt1 value='1'>option1</opt1>
-                    <debug>debug</debug>
-                    <info>info</info>
-                    <error>error</error>
-                    <fatal>fatal</fatal>
-                </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
                 <default>0</default>
