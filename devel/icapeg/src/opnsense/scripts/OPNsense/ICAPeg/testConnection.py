@@ -64,10 +64,14 @@ def update_toml(Conf_file_path,toml_file_path):
 
 
 def restart_icapeg(icapeg_path):
-    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap_start'], shell=True)
     subprocess.run(['chmod +x ' + icapeg_path], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap_chmod'], shell=True)
     subprocess.run(['killall -9 icapeg || true'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap_kill'], shell=True)
     subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap_runICAP'], shell=True)
+
 
 
 main()
