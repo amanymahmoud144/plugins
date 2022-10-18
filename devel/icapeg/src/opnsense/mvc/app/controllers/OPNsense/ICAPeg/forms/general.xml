@@ -13,10 +13,10 @@
         <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
     </field>
     <field>
-		<id> ICAPeg.ADKerberosImplementation</id>
-		<label>AD Kerberos implementation</label>
-		<type>dropdown</type>
-		<help>Select Windows Server version for AD controller</help>
+	<id> ICAPeg.general.ADKerberosImplementation</id>
+	<label>AD Kerberos implementation</label>
+	<type>dropdown</type>
+	<help>Select Windows Server version for AD controller</help>
 	</field>
     <field>
         <id>icapeg.general.WritingLogsToConsole</id>
