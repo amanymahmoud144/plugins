@@ -40,12 +40,12 @@ icapeg_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/icapeg"
 
 
 def main():
-    subprocess.run(['touch outside_main'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/outside_main'], shell=True)
     update_toml(Conf_file_path,toml_file_path)
     restart_icapeg(icapeg_path)
 
 def update_toml(Conf_file_path,toml_file_path):
-    subprocess.run(['touch inside_updateToml'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_updateToml'], shell=True)
     toml_file = toml.load(toml_file_path) 
     conf_file = open(Conf_file_path, 'r')
     toml_string = conf_file.read()
@@ -64,7 +64,7 @@ def update_toml(Conf_file_path,toml_file_path):
 
 
 def restart_icapeg(icapeg_path):
-    subprocess.run(['touch inside_restarticap'], shell=True)
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap'], shell=True)
     subprocess.run(['chmod +x ' + icapeg_path], shell=True)
     subprocess.run(['killall -9 icapeg || true'], shell=True)
     subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
