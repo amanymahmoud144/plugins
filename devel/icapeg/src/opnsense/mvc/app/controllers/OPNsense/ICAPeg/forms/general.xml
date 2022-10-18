@@ -8,7 +8,7 @@
     </field>
     <field>
         <id>icapeg.general.LogLevel</id>
-        <label>Log Level</label>
+        <label>my Log Level</label>
         <type>dropdown</type>
         <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
     </field>
