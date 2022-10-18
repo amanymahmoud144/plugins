@@ -70,7 +70,8 @@ def restart_icapeg(icapeg_path):
     subprocess.run(['killall -9 icapeg || true'], shell=True)
     subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_restarticap_kill'], shell=True)
     subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
-    subprocess.run(['echo $? > log'], shell=True)
+    subprocess.run(['echo $? >  /usr/local/opnsense/scripts/OPNsense/ICAPeg/log'], shell=True)
+    subprocess.run(['echo $PWD >  /usr/local/opnsense/scripts/OPNsense/ICAPeg/pwd'], shell=True)
 
 
 
