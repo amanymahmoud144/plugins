@@ -11,18 +11,6 @@
                 <default>1344</default>
                 <Required>N</Required>
             </PortNum>
-            <LogLevel type="OptionField">
-                <default>"dee"</default>
-                <Required>Y</Required>
-            </LogLevel>
-            <ADKerberosImplementation type="OptionField">
-            <default>W2008</default>
-                <Required>N</Required>
-                <OptionValues>
-                    <W2003>Windows 2003</W2003>
-                    <W2008>Windows 2008 with AES</W2008>
-                </OptionValues>
-            </ADKerberosImplementation>
             <WritingLogsToConsole type="BooleanField">
                 <default>0</default>
                 <Required>N</Required>
