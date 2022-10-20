@@ -7,18 +7,6 @@
         <help>1344</help>
     </field>
     <field>
-        <id>icapeg.general.LogLevel</id>
-        <label>my Log Level</label>
-        <type>dropdown</type>
-        <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
-    </field>
-    <field>
-	<id> ICAPeg.general.ADKerberosImplementation</id>
-	<label>AD Kerberos implementation</label>
-	<type>dropdown</type>
-	<help>Select Windows Server version for AD controller</help>
-	</field>
-    <field>
         <id>icapeg.general.WritingLogsToConsole</id>
         <label>Writing logs to console</label>
         <type>checkbox</type>
