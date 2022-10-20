@@ -9,7 +9,7 @@
             <!-- fields -->
             <PortNum type="TextField">
                 <default>1344</default>
-                <Required>Y</Required>
+                <Required>N</Required>
             </PortNum>
             <LogLevel type="OptionField">
                 <default>"dee"</default>
