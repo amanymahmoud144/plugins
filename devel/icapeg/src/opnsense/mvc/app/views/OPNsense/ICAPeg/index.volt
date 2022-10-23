@@ -41,6 +41,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
+                    $("#responseMsg").html(data['message']);
                 });
             });
         });
