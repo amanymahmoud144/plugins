@@ -59,25 +59,4 @@ class ServiceController extends ApiControllerBase
 //         return array("message" => "reloaaaald");
     }
 
-    /**
-     * test ICAPeg
-     */
-    public function testAction()
-    { 
-        $myfile = fopen("/root/test.txt", "w") or die("Unable to open file!");
-        $txt = "John Doe\n";
-        fwrite($myfile, $txt);
-        $txt = "Jane Doe\n";
-        fwrite($myfile, $txt);
-        fclose($myfile);
-        if ($this->request->isPost()) {
-            $backend = new Backend();
-            $bckresult = json_decode(trim($backend->configdRun("icapeg test")), true);
-            if ($bckresult !== null) {
-                // only return valid json type responses
-                return $bckresult;
-            }
-        }
-        return array("message" => "unable to run config actionnnnnn");
-    }
 }
