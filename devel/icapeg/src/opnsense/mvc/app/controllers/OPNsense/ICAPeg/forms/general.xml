@@ -60,7 +60,25 @@
     </field>
     <field>
         <id>icapeg.general.echo_preview_enabled</id>
-        <label>Preview preview_enabled</label>
+        <label>Preview enabled</label>
+        <type>text</type>
+        <help>options: true or false </help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_max_filesize</id>
+        <label>Maximum file size</label>
+        <type>text</type>
+        <help>write 0 for unlimited file size </help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_return_original_if_max_file_size_exceeded</id>
+        <label>return original if max file size exceeded</label>
+        <type>text</type>
+        <help>options: true or false </help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
+        <label>return 400 if file ext rejected</label>
         <type>text</type>
         <help>options: true or false </help>
     </field>
