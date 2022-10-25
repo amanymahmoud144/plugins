@@ -25,6 +25,7 @@
                 <Required>Y</Required>
             </DebuggingHeaders>
 
+
             <echoHeader type="TextField">
                 <default>true</default>
                 <Required>Y</Required>
@@ -61,6 +62,13 @@
                 <default>false</default>
                 <Required>N</Required>
             </echo_return_400_if_file_ext_rejected>
+
+
+            <clamavHeader type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </clamavHeader>
          </general>
     </items>
+
 </model>

@@ -82,5 +82,14 @@
         <type>text</type>
         <help>options: true or false </help>
     </field>
+
+
+
+    <field>
+        <id>icapeg.general.clamavHeader</id>
+        <label>Clamav services</label>
+        <type>header</type>
+    </field>
+
 </form>
 
