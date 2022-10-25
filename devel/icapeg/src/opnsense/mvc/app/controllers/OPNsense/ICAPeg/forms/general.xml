@@ -27,5 +27,10 @@
             Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service
         </help>
     </field>
+    <field>
+        <id>icapeg.general.echoHeader</id>
+        <label>Echo services</label>
+        <type>header</type>
+    </field>
 </form>
 
