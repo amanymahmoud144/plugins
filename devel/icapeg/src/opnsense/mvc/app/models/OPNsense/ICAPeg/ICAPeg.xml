@@ -7,8 +7,9 @@
         <!-- container -->
         <general>
             <!-- fields -->
-            <PortNum type="TextField">
+            <PortNum type="PortField">
                 <default>1344</default>
+                <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="TextField">
