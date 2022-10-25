@@ -47,10 +47,16 @@
         <help>options: true or false</help>
     </field>
     <field>
-        <id>icapeg.general.echo_shadow_servic</id>
-        <label>Enable shadow servic</label>
+        <id>icapeg.general.echo_shadow_service</id>
+        <label>Enable shadow service</label>
         <type>text</type>
         <help>options: true or false</help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_preview_bytes</id>
+        <label>Enable preview bytes</label>
+        <type>text</type>
+        <help>preview bytes </help>
     </field>
 </form>
 

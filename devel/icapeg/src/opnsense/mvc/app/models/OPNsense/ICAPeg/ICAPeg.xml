@@ -39,8 +39,12 @@
             </echo_resp_mode>
             <echo_shadow_service type="TextField">
                 <default>false</default>
-                <Required>Y</Required>
+                <Required>N</Required>
             </echo_shadow_service>
+            <echo_preview_bytes type="NumericField">
+                <default>1024</default>
+                <Required>N</Required>
+            </echo_preview_bytes>
          </general>
     </items>
 </model>
