@@ -45,6 +45,10 @@
                 <default>1024</default>
                 <Required>N</Required>
             </echo_preview_bytes>
+            <echo_preview_enabled type="TextField">
+                <default>true</default>
+                <Required>N</Required>
+            </echo_preview_enabled>
          </general>
     </items>
 </model>

@@ -54,9 +54,15 @@
     </field>
     <field>
         <id>icapeg.general.echo_preview_bytes</id>
-        <label>Enable preview bytes</label>
+        <label>Preview bytes</label>
         <type>text</type>
         <help>preview bytes </help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_preview_enabled</id>
+        <label>Preview preview_enabled</label>
+        <type>text</type>
+        <help>options: true or false </help>
     </field>
 </form>
 
