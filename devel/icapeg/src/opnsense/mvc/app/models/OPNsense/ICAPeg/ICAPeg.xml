@@ -24,10 +24,15 @@
                 <default>true</default>
                 <Required>Y</Required>
             </DebuggingHeaders>
+
             <echoHeader type="TextField">
                 <default>true</default>
                 <Required>Y</Required>
             </echoHeader>
+            <echo_req_mode type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </echo_req_mode>
          </general>
     </items>
 </model>
