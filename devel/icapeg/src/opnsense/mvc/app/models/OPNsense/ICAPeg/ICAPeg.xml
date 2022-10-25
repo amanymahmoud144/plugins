@@ -49,7 +49,7 @@
                 <default>true</default>
                 <Required>N</Required>
             </echo_preview_enabled>
-            <echo_max_filesize type="TextField">
+            <echo_max_filesize type="NumericField">
                 <default>0</default>
                 <Required>N</Required>
             </echo_max_filesize>
