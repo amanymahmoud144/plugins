@@ -33,6 +33,14 @@
                 <default>true</default>
                 <Required>Y</Required>
             </echo_req_mode>
+            <echo_resp_mode type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </echo_resp_mode>
+            <echo_shadow_service type="TextField">
+                <default>false</default>
+                <Required>Y</Required>
+            </echo_shadow_service>
          </general>
     </items>
 </model>

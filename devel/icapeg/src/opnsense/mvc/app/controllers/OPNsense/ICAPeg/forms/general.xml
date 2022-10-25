@@ -36,7 +36,19 @@
     </field>
     <field>
         <id>icapeg.general.echo_req_mode</id>
-        <label>Writing logs to console</label>
+        <label>Enable request mode</label>
+        <type>text</type>
+        <help>options: true or false</help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_resp_mode</id>
+        <label>Enable response mode</label>
+        <type>text</type>
+        <help>options: true or false</help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_shadow_servic</id>
+        <label>Enable shadow servic</label>
         <type>text</type>
         <help>options: true or false</help>
     </field>
