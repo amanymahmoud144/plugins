@@ -7,16 +7,25 @@
         <help>1344</help>
     </field>
     <field>
+        <id>icapeg.general.LogLevel </id>
+        <label>LogLevel</label>
+        <type>text</type>
+        <help>options:debug, info, error, or fatal</help>
+    </field>
+    <field>
         <id>icapeg.general.WritingLogsToConsole</id>
         <label>Writing logs to console</label>
-        <type>checkbox</type>
-        <help>Disable this feature</help>
+        <type>text</type>
+        <help>options: true or false</help>
     </field>
     <field>
         <id>icapeg.general.DebuggingHeaders</id>
         <label>Debugging headers</label>
-        <type>checkbox</type>
-        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service</help>
+        <type>text</type>
+        <help>
+            options: true or false
+            Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service
+        </help>
     </field>
-     
 </form>
+

@@ -9,14 +9,18 @@
             <!-- fields -->
             <PortNum type="TextField">
                 <default>1344</default>
-                <Required>N</Required>
+                <Required>Y</Required>
             </PortNum>
-            <WritingLogsToConsole type="BooleanField">
-                <default>0</default>
-                <Required>N</Required>
+            <LogLevel type="TextField">
+                <default>debug</default>
+                <Required>Y</Required>
+            </LogLevel>
+            <WritingLogsToConsole type="TextField">
+                <default>false</default>
+                <Required>Y</Required>
             </WritingLogsToConsole>
-            <DebuggingHeaders type="BooleanField">
-                <default>1</default>
+            <DebuggingHeaders type="TextField">
+                <default>true</default>
                 <Required>Y</Required>
             </DebuggingHeaders>
          </general>
