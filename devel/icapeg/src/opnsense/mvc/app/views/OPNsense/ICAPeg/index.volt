@@ -41,15 +41,8 @@ POSSIBILITY OF SUCH DAMAGE.
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
+                    $("#responseMsg").html(data['status']);
                 });
-            });
-        });
-
-        $("#testAct").click(function(){
-            $("#responseMsg").removeClass("hidden");
-            ajaxCall(url="/api/icapeg/service/test", sendData={},callback=function(data,status) {
-                // action to run after reload
-                $("#responseMsg").html(data['message']);
             });
         });
 
@@ -66,5 +59,4 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <div class="col-md-12">
     <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b></button>
-    <button class="btn btn-primary"  id="testAct" type="button"><b>{{ lang._('Test') }}</b></button>
 </div>
