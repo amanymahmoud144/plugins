@@ -64,10 +64,10 @@
             </echo_return_400_if_file_ext_rejected>
 
 
-            <grayimagesHeader type="TextField">
+            <clamavHeader type="TextField">
                 <default>true</default>
                 <Required>Y</Required>
-            </grayimagesHeader>
+            </clamavHeader>
             <clamav_req_mode type="TextField">
                 <default>true</default>
                 <Required>Y</Required>
@@ -104,7 +104,7 @@
 
 
 
-                <grayimagesHeader type="TextField">
+            <grayimagesHeader type="TextField">
                 <default>true</default>
                 <Required>Y</Required>
             </grayimagesHeader>
@@ -136,7 +136,7 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_original_if_max_file_size_exceeded>
-            <grayimages_return_400_if_file_ext_rejected type="TextField">
+            <grayimages_return_400_if_file_ext_rejected type="OptionField">
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_400_if_file_ext_rejected>

@@ -196,6 +196,12 @@
                 <type>text</type>
                 <help>options: true or false </help>
             </field>
+             <field>
+                <id>icapeg.general.grayimages_return_400_if_file_ext_rejected</id>
+                <label>return 400 if file ext rejected</label>
+                <type>dropdown</type>
+                <help>options: true or false </help>
+            </field>
            
 
         </form>
