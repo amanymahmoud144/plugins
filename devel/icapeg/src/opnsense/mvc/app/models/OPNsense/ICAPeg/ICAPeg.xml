@@ -140,6 +140,16 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_400_if_file_ext_rejected>
+            
+            
+             <grayimages_return_400_if_file_ext_rejected type="OptionField">
+                <default>False</default>
+                 <Required>Y</Required>
+                 <OptionValues>
+                      <permit>True</permit>
+                      <deny>False</deny>
+                 </OptionValues>
+            </grayimages_return_400_if_file_ext_rejected>
 
 
 
