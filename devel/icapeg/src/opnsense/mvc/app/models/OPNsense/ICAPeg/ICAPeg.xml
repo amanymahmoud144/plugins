@@ -142,11 +142,11 @@
             </grayimages_return_400_if_file_ext_rejected>
             
 
-            <enable_clamav type="BooleanField">
+            <clamavHeader type="BooleanField">
             <default>0</default>
             <Required>Y</Required>
-        </enable_clamav>
-        <scanfiletypes type="OptionField">
+        </clamavHeader>
+        <clamav_max_filesize type="OptionField">
             <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
             <multiple>Y</multiple>
             <Required>Y</Required>
@@ -159,7 +159,7 @@
                     <JPEG>JPEG pictures</JPEG>
                     <MSOFFICE>Microsoft office files</MSOFFICE>
                 </OptionValues>
-        </scanfiletypes>
+        </clamav_max_filesize>
 
 
 
