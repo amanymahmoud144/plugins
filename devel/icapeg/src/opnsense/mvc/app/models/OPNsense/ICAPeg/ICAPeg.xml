@@ -8,7 +8,7 @@
         <general>
             <!-- fields -->
             <PortNum type="PortField">
-                <default>1344</default>
+                <default>  1344</default>
                 <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
