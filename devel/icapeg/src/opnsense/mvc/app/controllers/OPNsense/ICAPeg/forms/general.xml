@@ -12,12 +12,12 @@
         <type>text</type>
         <help>options:debug, info, error, or fatal</help>
     </field>
-    <!-- ####################### -->
+    <!--  1 ####################### -->
      <field>
         <id>icapeg.general.WritingLogsToConsole</id>
         <label>Writing logs to console</label>
         <type>checkbox</type>
-        <help>Pass the content instead of blocking it, in the case when the virus scanner or the virus_scan module finds an error.</help>
+        <help>Writing logs on the ICAPeg console</help>
     </field>
     <!-- ##################### -->
     <field>
@@ -26,6 +26,14 @@
         <type>text</type>
         <help>options: true or false</help>
     </field>
+     <!-- 2 ####################### -->
+     <field>
+        <id>icapeg.general.DebuggingHeaders</id>
+        <label>Debugging headers</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service </help>
+    </field>
+    <!-- ##################### -->
     <field>
         <id>icapeg.general.DebuggingHeaders</id>
         <label>Debugging headers</label>
@@ -42,18 +50,42 @@
         <label>Echo services</label>
         <type>header</type>
     </field>
+     <!-- echo 1 ####################### -->
+     <field>
+        <id>icapeg.general.echo_req_mode</id>
+        <label>Enable request mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+    </field>
+    <!-- ##################### -->
     <field>
         <id>icapeg.general.echo_req_mode</id>
         <label>Enable request mode</label>
         <type>text</type>
         <help>options: true or false</help>
     </field>
+     <!-- echo 2 ####################### -->
+     <field>
+        <id>icapeg.general.echo_resp_mode</id>
+        <label>Enable response mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
+    </field>
+    <!-- ##################### -->
     <field>
         <id>icapeg.general.echo_resp_mode</id>
         <label>Enable response mode</label>
         <type>text</type>
         <help>options: true or false</help>
     </field>
+     <!-- echo 3 ####################### -->
+     <field>
+        <id>icapeg.general.echo_shadow_service</id>
+        <label>Enable shadow service</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+    </field>
+    <!-- ##################### -->
     <field>
         <id>icapeg.general.echo_shadow_service</id>
         <label>Enable shadow service</label>
