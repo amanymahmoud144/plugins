@@ -34,7 +34,7 @@
         <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service </help>
     </field>
     <!-- ##################### -->
-    <field>
+    <!-- <field>
         <id>icapeg.general.DebuggingHeaders</id>
         <label>Debugging headers</label>
         <type>text</type>
@@ -42,7 +42,7 @@
             options: true or false
             Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service
         </help>
-    </field>
+    </field> -->
 
 
     <field>
@@ -58,12 +58,12 @@
         <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
     </field>
     <!-- ##################### -->
-    <field>
+   <!--  <field>
         <id>icapeg.general.echo_req_mode</id>
         <label>Enable request mode</label>
         <type>text</type>
         <help>options: true or false</help>
-    </field>
+    </field> -->
      <!-- echo 2 ####################### -->
      <field>
         <id>icapeg.general.echo_resp_mode</id>
@@ -72,12 +72,12 @@
         <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
     </field>
     <!-- ##################### -->
-    <field>
+    <!-- <field>
         <id>icapeg.general.echo_resp_mode</id>
         <label>Enable response mode</label>
         <type>text</type>
         <help>options: true or false</help>
-    </field>
+    </field> -->
      <!-- echo 3 ####################### -->
      <field>
         <id>icapeg.general.echo_shadow_service</id>
@@ -86,42 +86,66 @@
         <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
     </field>
     <!-- ##################### -->
-    <field>
+    <!-- <field>
         <id>icapeg.general.echo_shadow_service</id>
         <label>Enable shadow service</label>
         <type>text</type>
         <help>options: true or false</help>
-    </field>
+    </field> -->
     <field>
         <id>icapeg.general.echo_preview_bytes</id>
         <label>Preview bytes</label>
         <type>text</type>
         <help>preview bytes </help>
     </field>
-    <field>
+    <!-- echo 3 ####################### -->
+     <field>
+        <id>icapeg.general.echo_preview_enabled</id>
+        <label>Preview enabled</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to enable Preview bytes on files </help>
+    </field>
+    <!-- echo 4 ##################### -->
+    <!-- <field>
         <id>icapeg.general.echo_preview_enabled</id>
         <label>Preview enabled</label>
         <type>text</type>
         <help>options: true or false </help>
-    </field>
+    </field> -->
     <field>
         <id>icapeg.general.echo_max_filesize</id>
         <label>Maximum file size</label>
         <type>text</type>
         <help>write 0 for unlimited file size </help>
     </field>
-    <field>
+    <!-- echo 5 ####################### -->
+     <field>
+        <id>icapeg.general.echo_return_original_if_max_file_size_exceeded</id>
+        <label>Return original</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to  return original if max file size exceeded </help>
+    </field>
+    <!-- ##################### -->
+    <!-- <field>
         <id>icapeg.general.echo_return_original_if_max_file_size_exceeded</id>
         <label>return original if max file size exceeded</label>
         <type>text</type>
         <help>options: true or false </help>
+    </field> -->
+    <!-- echo 6 ####################### -->
+     <field>
+        <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
+        <label>Return 400 </label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to return 400 if file extention rejected</help>
     </field>
-    <field>
+    <!-- ##################### -->
+   <!--  <field>
         <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
         <label>return 400 if file ext rejected</label>
         <type>text</type>
         <help>options: true or false </help>
-    </field>
+    </field> -->
 
 
 
