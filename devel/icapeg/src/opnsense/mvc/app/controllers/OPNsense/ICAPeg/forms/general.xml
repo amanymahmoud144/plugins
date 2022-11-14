@@ -12,6 +12,14 @@
         <type>text</type>
         <help>options:debug, info, error, or fatal</help>
     </field>
+    <!-- ####################### -->
+     <field>
+        <id>icapeg.general.WritingLogsToConsole</id>
+        <label>Writing logs to console</label>
+        <type>checkbox</type>
+        <help>Pass the content instead of blocking it, in the case when the virus scanner or the virus_scan module finds an error.</help>
+    </field>
+    <!-- ##################### -->
     <field>
         <id>icapeg.general.WritingLogsToConsole</id>
         <label>Writing logs to console</label>
