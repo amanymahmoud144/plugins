@@ -362,5 +362,16 @@
                 <type>dropdown</type>
                 <help>options: true or false </help>
             </field> -->
+
+
+
+            <field>
+                <id>icapeg.general.grayimages_return_400_if_file_ext_rejected</id>
+                <label>Scan for filetypes</label>
+                <type>select_multiple</type>
+                <help>Choose for which file types to scan, if unsure select all.</help>
+            </field>
+
+
         </form>
 
