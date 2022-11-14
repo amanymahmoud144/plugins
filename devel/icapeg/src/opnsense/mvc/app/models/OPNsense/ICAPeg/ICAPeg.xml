@@ -1,9 +1,9 @@
-<!-- <model>
+ <model>
     <mount>//OPNsense/icapeg</mount>
     <description>
         the OPNsense "ICAPeg" application
     </description>
-    <items> -->
+    <items>
         <!-- container -->
         <general>
             <!-- fields -->
@@ -140,30 +140,6 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_400_if_file_ext_rejected> 
-            
-
-            <clamavHeader type="BooleanField">
-            <default>0</default>
-            <Required>Y</Required>
-        </clamavHeader>
-        <clamav_max_filesize type="OptionField">
-            <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
-            <multiple>Y</multiple>
-            <Required>Y</Required>
-                <OptionValues>
-                    <TEXT>Text files</TEXT>
-                    <DATA>Binary files</DATA>
-                    <EXECUTABLE>Executables</EXECUTABLE>
-                    <ARCHIVE>Archives</ARCHIVE>
-                    <GIF>GIF animations</GIF>
-                    <JPEG>JPEG pictures</JPEG>
-                    <MSOFFICE>Microsoft office files</MSOFFICE>
-                </OptionValues>
-        </clamav_max_filesize>
-
-
-
-
          </general>
     </items>
 
