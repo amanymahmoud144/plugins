@@ -12,9 +12,15 @@
                 <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
-            <LogLevel type="TextField">
-                <default>debug</default>
+            <LogLevel type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
                 <Required>Y</Required>
+                <OptionValues>
+                    <TEXT>Debug</TEXT>
+                    <TEXT>Info</TEXT>
+                    <TEXT>Error</TEXT>
+                    <TEXT>Fatal</TEXT>
+                </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="TextField">
                 <default>false</default>
@@ -136,12 +142,6 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_original_if_max_file_size_exceeded>
-            <grayimages_return_400_if_file_ext_rejected type="OptionField">
-                <default>false</default>
-                <Required>N</Required>
-            </grayimages_return_400_if_file_ext_rejected> 
-
-
             <grayimages_return_400_if_file_ext_rejected type="OptionField">
                 <default>false</default>
                 <Required>N</Required>
