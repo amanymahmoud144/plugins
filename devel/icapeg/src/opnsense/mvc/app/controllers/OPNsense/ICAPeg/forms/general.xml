@@ -525,8 +525,14 @@
         <help> </help>
     </field>
     <field>
-                <id>icapeg.general.virustotal_base_url</id>
-                <label>Base_URL</label>
+                <id>icapeg.general.virustotal_scan_url</id>
+                <label>Scan_URL</label>
+                <type>text</type>
+                <help> </help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_report_url</id>
+                <label>Report_URL</label>
                 <type>text</type>
                 <help> </help>
             </field>

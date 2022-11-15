@@ -351,19 +351,23 @@
                     </OptionValues>
             </virustotal_bypass_extensions>
             <virustotal_timeout type="NumericField">
-                <default>10</default>
+                <default>1000</default>
                 <Required>N</Required>
             </virustotal_timeout>
             <virustotal_fail_threshold type="NumericField">
                 <default>10</default>
                 <Required>N</Required>
             </virustotal_fail_threshold>
-            <virustotal_base_url type="TextField">
-                <default>https://grey-images.egirna.net/api</default>
+            <virustotal_scan_url type="TextField">
+                <default>https://www.virustotal.com/vtapi/v2/file/scan</default>
                 <Required>Y</Required>
-            </virustotal_base_url>
+            </virustotal_scan_url>
+            <virustotal_report_url type="TextField">
+                <default>https://www.virustotal.com/vtapi/v2/file/report</default>
+                <Required>Y</Required>
+            </virustotal_report_url>
             <virustotal_api_key type="TextField">
-                <default>api_key</default>
+                <default>a3f2c1f6f3e68e0b2ccfc63002aa4cb4896b7ea43b6aca2c2ff688153010cd89</default>
                 <Required>Y</Required>
             </virustotal_api_key>
             <virustotal_shadow_service type="TextField">
