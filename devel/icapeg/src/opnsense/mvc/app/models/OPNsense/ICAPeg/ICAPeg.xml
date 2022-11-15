@@ -45,6 +45,48 @@
                 <default>true</default>
                 <Required>Y</Required>
             </echo_resp_mode>
+            <echo_process_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </echo_process_extensions>
+            <echo_reject_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </echo_reject_extensions>
+            <echo_bypass_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </echo_bypass_extensions>
             <echo_shadow_service type="TextField">
                 <default>false</default>
                 <Required>N</Required>

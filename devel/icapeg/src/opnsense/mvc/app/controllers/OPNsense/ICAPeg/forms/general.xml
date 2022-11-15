@@ -78,6 +78,27 @@
         <type>text</type>
         <help>options: true or false</help>
     </field> -->
+    <field>
+        <id>icapeg.general.echo_process_extensions </id>
+        <label>echo_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_reject_extensions </id>
+        <label>echo_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_bypass_extensions </id>
+        <label>echo_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
      <!-- echo 3 ####################### -->
      <field>
         <id>icapeg.general.echo_shadow_service</id>
@@ -342,12 +363,6 @@
                 <help>Enable this feature if you want to  return original if max file size exceeded </help>
             </field>
             <!-- ##################### -->
-            <!-- <field>
-                <id>icapeg.general.grayimages_return_400_if_file_ext_rejected</id>
-                <label>return 400 if file ext rejected</label>
-                <type>text</type>
-                <help>options: true or false </help>
-            </field> -->
              <!-- grayimages 6 ####################### -->
             <field>
                 <id>icapeg.general.grayimages_return_400_if_file_ext_rejected</id>
