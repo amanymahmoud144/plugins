@@ -293,6 +293,103 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_400_if_file_ext_rejected> 
+
+
+
+            <virustotalHeader type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </virustotalHeader>
+            <virustotal_req_mode type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </virustotal_req_mode>
+            <virustotal_resp_mode type="TextField">
+                <default>true</default>
+                <Required>Y</Required>
+            </virustotal_resp_mode>
+            <virustotal_process_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </virustotal_process_extensions>
+            <virustotal_reject_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </virustotal_reject_extensions>
+            <virustotal_bypass_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </virustotal_bypass_extensions>
+            <virustotal_timeout type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </virustotal_timeout>
+            <virustotal_fail_threshold type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </virustotal_fail_threshold>
+            <virustotal_base_url type="TextField">
+                <default>https://grey-images.egirna.net/api</default>
+                <Required>Y</Required>
+            </virustotal_base_url>
+            <virustotal_api_key type="TextField">
+                <default>api_key</default>
+                <Required>Y</Required>
+            </virustotal_api_key>
+            <virustotal_shadow_service type="TextField">
+                <default>false</default>
+                <Required>N</Required>
+            </virustotal_shadow_service>
+            <virustotal_preview_bytes type="NumericField">
+                <default>1024</default>
+                <Required>N</Required>
+            </virustotal_preview_bytes>
+            <virustotal_preview_enabled type="TextField">
+                <default>true</default>
+                <Required>N</Required>
+            </virustotal_preview_enabled>
+            <virustotal_max_filesize type="NumericField">
+                <default>0</default>
+                <Required>N</Required>
+            </virustotal_max_filesize>
+            <virustotal_return_original_if_max_file_size_exceeded type="TextField">
+                <default>false</default>
+                <Required>N</Required>
+            </virustotal_return_original_if_max_file_size_exceeded>
+            <virustotal_return_400_if_file_ext_rejected type="OptionField">
+                <default>false</default>
+                <Required>N</Required>
+            </virustotal_return_400_if_file_ext_rejected> 
          </general>
     </items>
 
