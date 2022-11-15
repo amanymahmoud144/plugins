@@ -126,7 +126,7 @@
                 <Required>Y</Required>
             </clamav_resp_mode>
             <clamav_process_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -140,7 +140,7 @@
                     </OptionValues>
             </clamav_process_extensions>
             <clamav_reject_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -154,7 +154,7 @@
                     </OptionValues>
             </clamav_reject_extensions>
             <clamav_bypass_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -211,6 +211,52 @@
                 <default>true</default>
                 <Required>Y</Required>
             </grayimages_resp_mode>
+            <grayimages_process_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </grayimages_process_extensions>
+            <grayimages_reject_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </grayimages_reject_extensions>
+            <grayimages_bypass_extensions type="OptionField">
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </grayimages_bypass_extensions>
+            <grayimages_timeout type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </grayimages_timeout>
             <grayimages_shadow_service type="TextField">
                 <default>false</default>
                 <Required>N</Required>
