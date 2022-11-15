@@ -362,8 +362,27 @@
         <id>icapeg.general.grayimages_timeout</id>
         <label>Timeout</label>
         <type>text</type>
-        <help>Time in seconds,the time upto which the server will wait for grayimages to scan the results </help>
+        <help>Time in seconds,the time upto which the server will wait for grayimages to scan the results.
+                ICAP will return 408 - Request timeout </help>
     </field>
+    <field>
+        <id>icapeg.general.grayimages_fail_threshold</id>
+        <label>Fail_threshold</label>
+        <type>text</type>
+        <help> </help>
+    </field>
+    <field>
+                <id>icapeg.general.grayimages_base_url</id>
+                <label>Base_URL</label>
+                <type>text</type>
+                <help> </help>
+            </field>
+            <field>
+                <id>icapeg.general.grayimages_api_key</id>
+                <label>API_Key</label>
+                <type>text</type>
+                <help> </help>
+            </field>
             <field>
                 <id>icapeg.general.grayimages_shadow_service</id>
                 <label>Enable shadow service</label>

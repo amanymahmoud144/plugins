@@ -257,6 +257,18 @@
                 <default>10</default>
                 <Required>N</Required>
             </grayimages_timeout>
+            <grayimages_fail_threshold type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </grayimages_fail_threshold>
+            <grayimages_base_url type="TextField">
+                <default>https://grey-images.egirna.net/api</default>
+                <Required>Y</Required>
+            </grayimages_base_url>
+            <grayimages_api_key type="TextField">
+                <default>api_key</default>
+                <Required>Y</Required>
+            </grayimages_api_key>
             <grayimages_shadow_service type="TextField">
                 <default>false</default>
                 <Required>N</Required>
