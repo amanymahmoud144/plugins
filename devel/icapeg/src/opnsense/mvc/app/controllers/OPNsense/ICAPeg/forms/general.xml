@@ -87,14 +87,14 @@
     </field>
     <field>
         <id>icapeg.general.echo_reject_extensions </id>
-        <label>echo_process_extensions</label>
+        <label>echo_reject_extensions</label>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
                 unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
         <id>icapeg.general.echo_bypass_extensions </id>
-        <label>echo_process_extensions</label>
+        <label>echo_bypass_extensions</label>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
                 unknown = system couldn't find out the type of the file</help>
@@ -204,6 +204,33 @@
         <help>options: true or false</help>
     </field> -->
      <!-- clamav 3 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_process_extensions </id>
+        <label>clamav_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_reject_extensions </id>
+        <label>clamav_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_bypass_extensions </id>
+        <label>clamav_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_timeout</id>
+        <label>Timeout</label>
+        <type>text</type>
+        <help>Time in seconds,the time upto which the server will wait for clamav to scan the results </help>
+    </field>
      <field>
         <id>icapeg.general.clamav_shadow_service</id>
         <label>Enable shadow service</label>

@@ -125,6 +125,52 @@
                 <default>true</default>
                 <Required>Y</Required>
             </clamav_resp_mode>
+            <clamav_process_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </clamav_process_extensions>
+            <clamav_reject_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </clamav_reject_extensions>
+            <clamav_bypass_extensions type="OptionField">
+                <default>Debug,Info,Error,Fatal</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                        <TEXT>Text files</TEXT>
+                        <DATA>Binary files</DATA>
+                        <EXECUTABLE>Executables</EXECUTABLE>
+                        <ARCHIVE>Archives</ARCHIVE>
+                        <GIF>GIF animations</GIF>
+                        <JPEG>JPEG pictures</JPEG>
+                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                    </OptionValues>
+            </clamav_bypass_extensions>
+            <clamav_timeout type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </clamav_timeout>
             <clamav_shadow_service type="TextField">
                 <default>false</default>
                 <Required>N</Required>
