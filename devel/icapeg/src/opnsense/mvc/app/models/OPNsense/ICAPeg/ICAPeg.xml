@@ -46,7 +46,7 @@
                 <Required>Y</Required>
             </echo_resp_mode>
             <echo_process_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -60,7 +60,7 @@
                     </OptionValues>
             </echo_process_extensions>
             <echo_reject_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -74,7 +74,7 @@
                     </OptionValues>
             </echo_reject_extensions>
             <echo_bypass_extensions type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
