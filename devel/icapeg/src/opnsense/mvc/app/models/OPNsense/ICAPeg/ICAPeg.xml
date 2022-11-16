@@ -289,10 +289,7 @@
                 <default>false</default>
                 <Required>N</Required>
             </grayimages_return_original_if_max_file_size_exceeded>
-            <grayimages_return_400_if_file_ext_rejected type="OptionField">
-                <default>false</default>
-                <Required>N</Required>
-            </grayimages_return_400_if_file_ext_rejected> 
+    
 
 
 
@@ -390,10 +387,6 @@
                 <default>false</default>
                 <Required>N</Required>
             </virustotal_return_original_if_max_file_size_exceeded>
-            <virustotal_return_400_if_file_ext_rejected type="OptionField">
-                <default>false</default>
-                <Required>N</Required>
-            </virustotal_return_400_if_file_ext_rejected> 
          </general>
     </items>
 
