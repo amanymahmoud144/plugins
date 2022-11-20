@@ -262,7 +262,7 @@
                 <Required>N</Required>
             </grayimages_fail_threshold>
             <grayimages_base_url type="TextField">
-                <default>"https://grey-images.egirna.net/api"</default>
+                <default>https://grey-images.egirna.net/api</default>
                 <Required>Y</Required>
             </grayimages_base_url>
             <grayimages_api_key type="TextField">
@@ -356,15 +356,15 @@
                 <Required>N</Required>
             </virustotal_fail_threshold>
             <virustotal_scan_url type="TextField">
-                <default>"https://www.virustotal.com/vtapi/v2/file/scan"</default>
+                <default>https://www.virustotal.com/vtapi/v2/file/scan</default>
                 <Required>Y</Required>
             </virustotal_scan_url>
             <virustotal_report_url type="TextField">
-                <default>"https://www.virustotal.com/vtapi/v2/file/report"</default>
+                <default>https://www.virustotal.com/vtapi/v2/file/report</default>
                 <Required>Y</Required>
             </virustotal_report_url>
             <virustotal_api_key type="TextField">
-                <default>"a3f2c1f6f3e68e0b2ccfc63002aa4cb4896b7ea43b6aca2c2ff688153010cd89"</default>
+                <default>a3f2c1f6f3e68e0b2ccfc63002aa4cb4896b7ea43b6aca2c2ff688153010cd89</default>
                 <Required>Y</Required>
             </virustotal_api_key>
             <virustotal_shadow_service type="TextField">
