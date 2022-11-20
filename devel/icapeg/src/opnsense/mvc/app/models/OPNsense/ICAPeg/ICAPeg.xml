@@ -266,7 +266,7 @@
                 <Required>Y</Required>
             </grayimages_base_url>
             <grayimages_api_key type="TextField">
-                <default>"api_key"</default>
+                <default>api_key</default>
                 <Required>Y</Required>
             </grayimages_api_key>
             <grayimages_shadow_service type="TextField">
