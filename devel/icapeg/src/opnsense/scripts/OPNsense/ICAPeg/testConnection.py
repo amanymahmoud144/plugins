@@ -53,9 +53,7 @@ def update_toml(Conf_file_path,toml_file_path):
     for key_1 in config_dict:
         if type(config_dict[key_1]) is dict:
             for key_2 in config_dict[key_1]:
-                print(key_2)
                 toml_file[key_1][key_2] = config_dict[key_1][key_2]
-
         else:
             toml_file[key_1] = config_dict[key_1]
 
