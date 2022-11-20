@@ -381,7 +381,7 @@
                 <id>icapeg.general.grayimages_api_key</id>
                 <label>API_Key</label>
                 <type>text</type>
-                <help> Please write the api key between " api_key"</help>
+                <help> Please write the api key between Double Quotation</help>
             </field>
             <field>
                 <id>icapeg.general.grayimages_shadow_service</id>
@@ -523,19 +523,19 @@
                 <id>icapeg.general.virustotal_scan_url</id>
                 <label>Scan_URL</label>
                 <type>text</type>
-                <help>Please write the scan url link between " "</help>
+                <help>Please write the scan url link betweenDouble Quotation</help>
             </field>
             <field>
                 <id>icapeg.general.virustotal_report_url</id>
                 <label>Report_URL</label>
                 <type>text</type>
-                <help> Please write the report url between " "</help>
+                <help> Please write the report url between Double Quotation</help>
             </field>
             <field>
                 <id>icapeg.general.virustotal_api_key</id>
                 <label>API_Key</label>
                 <type>text</type>
-                <help>Please write the api key between " api_key"</help>
+                <help>Please write the api key between Double Quotation</help>
             </field>
             <field>
                 <id>icapeg.general.virustotal_shadow_service</id>
