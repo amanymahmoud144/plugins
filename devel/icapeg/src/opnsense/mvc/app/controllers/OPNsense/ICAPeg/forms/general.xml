@@ -322,10 +322,10 @@
                 <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
             </field>
             <field>
-                <id>icapeg.virustotal.virustotal_resp_mode</id>
+                <id>icapeg.general.virustotal_resp_mode</id>
                 <label>Enable response mode</label>
                 <type>checkbox</type>
-                <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
             </field>
             <field>
         <id>icapeg.general.virustotal_process_extensions </id>
