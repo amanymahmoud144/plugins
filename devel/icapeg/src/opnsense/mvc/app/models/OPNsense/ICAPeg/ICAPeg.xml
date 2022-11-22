@@ -24,25 +24,25 @@
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
-                <default>false</default>
+                <default>0</default>
                 <Required>Y</Required>
             </WritingLogsToConsole>
-            <DebuggingHeaders type="TextField">
-                <default>true</default>
+            <DebuggingHeaders type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </DebuggingHeaders>
 
 
-             <echoHeader type="TextField">
-                <default>true</default>
+             <echoHeader type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </echoHeader>
-            <echo_req_mode type="TextField">
-                <default>true</default>
+            <echo_req_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </echo_req_mode>
-            <echo_resp_mode type="TextField">
-                <default>true</default>
+            <echo_resp_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </echo_resp_mode>
             <echo_process_extensions type="OptionField">
@@ -87,42 +87,43 @@
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </echo_bypass_extensions>
-            <echo_shadow_service type="TextField">
-                <default>false</default>
+            <echo_shadow_service type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </echo_shadow_service>
             <echo_preview_bytes type="NumericField">
                 <default>1024</default>
                 <Required>N</Required>
             </echo_preview_bytes>
-            <echo_preview_enabled type="TextField">
-                <default>true</default>
+            <echo_preview_enabled type="BooleanField">
+                <default>1</default>
                 <Required>N</Required>
             </echo_preview_enabled>
             <echo_max_filesize type="NumericField">
                 <default>0</default>
                 <Required>N</Required>
             </echo_max_filesize>
-            <echo_return_original_if_max_file_size_exceeded type="TextField">
-                <default>false</default>
+            <echo_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </echo_return_original_if_max_file_size_exceeded>
-            <echo_return_400_if_file_ext_rejected type="TextField">
-                <default>false</default>
+            <echo_return_400_if_file_ext_rejected type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </echo_return_400_if_file_ext_rejected>
 
 
-            <clamavHeader type="TextField">
-                <default>true</default>
+
+            <clamavHeader type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </clamavHeader>
-            <clamav_req_mode type="TextField">
-                <default>true</default>
+            <clamav_req_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </clamav_req_mode>
-            <clamav_resp_mode type="TextField">
-                <default>true</default>
+            <clamav_resp_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </clamav_resp_mode>
             <clamav_process_extensions type="OptionField">
@@ -171,44 +172,44 @@
                 <default>10</default>
                 <Required>N</Required>
             </clamav_timeout>
-            <clamav_shadow_service type="TextField">
-                <default>false</default>
+            <clamav_shadow_service type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </clamav_shadow_service>
             <clamav_preview_bytes type="NumericField">
                 <default>1024</default>
                 <Required>N</Required>
             </clamav_preview_bytes>
-            <clamav_preview_enabled type="TextField">
-                <default>true</default>
+            <clamav_preview_enabled type="BooleanField">
+                <default>1</default>
                 <Required>N</Required>
             </clamav_preview_enabled>
             <clamav_max_filesize type="NumericField">
                 <default>0</default>
                 <Required>N</Required>
             </clamav_max_filesize>
-            <clamav_return_original_if_max_file_size_exceeded type="TextField">
-                <default>false</default>
+            <clamav_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </clamav_return_original_if_max_file_size_exceeded>
-            <clamav_return_400_if_file_ext_rejected type="TextField">
-                <default>false</default>
+            <clamav_return_400_if_file_ext_rejected type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </clamav_return_400_if_file_ext_rejected>
 
 
 
 
-            <grayimagesHeader type="TextField">
-                <default>true</default>
+            <grayimagesHeader type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </grayimagesHeader>
-            <grayimages_req_mode type="TextField">
-                <default>true</default>
+            <grayimages_req_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </grayimages_req_mode>
-            <grayimages_resp_mode type="TextField">
-                <default>true</default>
+            <grayimages_resp_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </grayimages_resp_mode>
             <grayimages_process_extensions type="OptionField">
@@ -265,44 +266,44 @@
                 <default>"https://grey-images.egirna.net/api"</default>
                 <Required>Y</Required>
             </grayimages_base_url>
-            <grayimages_api_key type="TextField">
+            <grayimages_api_key type="BooleanField">
                 <default>"api_key"</default>
                 <Required>Y</Required>
             </grayimages_api_key>
-            <grayimages_shadow_service type="TextField">
-                <default>false</default>
+            <grayimages_shadow_service type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </grayimages_shadow_service>
             <grayimages_preview_bytes type="NumericField">
                 <default>1024</default>
                 <Required>N</Required>
             </grayimages_preview_bytes>
-            <grayimages_preview_enabled type="TextField">
-                <default>true</default>
+            <grayimages_preview_enabled type="BooleanField">
+                <default>1</default>
                 <Required>N</Required>
             </grayimages_preview_enabled>
             <grayimages_max_filesize type="NumericField">
                 <default>0</default>
                 <Required>N</Required>
             </grayimages_max_filesize>
-            <grayimages_return_original_if_max_file_size_exceeded type="TextField">
-                <default>false</default>
+            <grayimages_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </grayimages_return_original_if_max_file_size_exceeded>
     
 
 
 
-            <virustotalHeader type="TextField">
-                <default>true</default>
+            <virustotalHeader type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </virustotalHeader>
-            <virustotal_req_mode type="TextField">
-                <default>true</default>
+            <virustotal_req_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </virustotal_req_mode>
-            <virustotal_resp_mode type="TextField">
-                <default>true</default>
+            <virustotal_resp_mode type="BooleanField">
+                <default>1</default>
                 <Required>Y</Required>
             </virustotal_resp_mode>
             <virustotal_process_extensions type="OptionField">
@@ -367,24 +368,24 @@
                 <default>"a3f2c1f6f3e68e0b2ccfc63002aa4cb4896b7ea43b6aca2c2ff688153010cd89"</default>
                 <Required>Y</Required>
             </virustotal_api_key>
-            <virustotal_shadow_service type="TextField">
-                <default>false</default>
+            <virustotal_shadow_service type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </virustotal_shadow_service>
             <virustotal_preview_bytes type="NumericField">
                 <default>1024</default>
                 <Required>N</Required>
             </virustotal_preview_bytes>
-            <virustotal_preview_enabled type="TextField">
-                <default>true</default>
+            <virustotal_preview_enabled type="BooleanField">
+                <default>1</default>
                 <Required>N</Required>
             </virustotal_preview_enabled>
             <virustotal_max_filesize type="NumericField">
                 <default>0</default>
                 <Required>N</Required>
             </virustotal_max_filesize>
-            <virustotal_return_original_if_max_file_size_exceeded type="TextField">
-                <default>false</default>
+            <virustotal_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
                 <Required>N</Required>
             </virustotal_return_original_if_max_file_size_exceeded>
          </general>
