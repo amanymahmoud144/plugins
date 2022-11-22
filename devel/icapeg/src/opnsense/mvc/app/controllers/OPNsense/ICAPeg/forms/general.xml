@@ -20,12 +20,6 @@
         <help>Writing logs on the ICAPeg console</help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.WritingLogsToConsole</id>
-        <label>Writing logs to console</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
      <!-- 2 ####################### -->
      <field>
         <id>icapeg.general.DebuggingHeaders</id>
@@ -34,17 +28,6 @@
         <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.DebuggingHeaders</id>
-        <label>Debugging headers</label>
-        <type>text</type>
-        <help>
-            options: true or false
-            Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service
-        </help>
-    </field> -->
-
-
     <field>
         <id>icapeg.general.echoHeader</id>
         <label>Echo services</label>
@@ -58,12 +41,6 @@
         <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
     </field>
     <!-- ##################### -->
-   <!--  <field>
-        <id>icapeg.general.echo_req_mode</id>
-        <label>Enable request mode</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
      <!-- echo 2 ####################### -->
      <field>
         <id>icapeg.general.echo_resp_mode</id>
@@ -72,12 +49,6 @@
         <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.echo_resp_mode</id>
-        <label>Enable response mode</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
     <field>
         <id>icapeg.general.echo_process_extensions </id>
         <label>echo_process_extensions</label>
@@ -107,12 +78,6 @@
         <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.echo_shadow_service</id>
-        <label>Enable shadow service</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
     <!-- echo 4 ####################### -->
      <field>
         <id>icapeg.general.echo_preview_enabled</id>
@@ -127,12 +92,6 @@
         <type>text</type>
         <help>preview bytes </help>
     </field>
-    <!-- <field>
-        <id>icapeg.general.echo_preview_enabled</id>
-        <label>Preview enabled</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
     <field>
         <id>icapeg.general.echo_max_filesize</id>
         <label>Maximum file size</label>
@@ -147,12 +106,6 @@
         <help>Enable this feature if you want to  return original if max file size exceeded </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.echo_return_original_if_max_file_size_exceeded</id>
-        <label>return original if max file size exceeded</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
     <!-- echo 6 ####################### -->
      <field>
         <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
@@ -161,15 +114,6 @@
         <help>Enable this feature if you want to return 400 if file extention rejected</help>
     </field>
     <!-- ##################### -->
-   <!--  <field>
-        <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
-        <label>return 400 if file ext rejected</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
-
-
-
     <field>
         <id>icapeg.general.clamavHeader</id>
         <label>Clamav services</label>
@@ -183,12 +127,6 @@
         <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.clamav_req_mode</id>
-        <label>Enable request mode</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
     <!-- clamav 2 ####################### -->
      <field>
         <id>icapeg.general.clamav_resp_mode</id>
@@ -197,12 +135,6 @@
         <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.clamav_resp_mode</id>
-        <label>Enable response mode</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
      <!-- clamav 3 ####################### -->
      <field>
         <id>icapeg.general.clamav_process_extensions </id>
@@ -238,12 +170,6 @@
         <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.clamav_shadow_service</id>
-        <label>Enable shadow service</label>
-        <type>text</type>
-        <help>options: true or false</help>
-    </field> -->
     <!-- clamav 4 ####################### -->
      <field>
         <id>icapeg.general.clamav_preview_enabled</id>
@@ -258,12 +184,6 @@
         <type>text</type>
         <help>preview bytes </help>
     </field>
-    <!-- <field>
-        <id>icapeg.general.clamav_preview_enabled</id>
-        <label>Preview enabled</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
     <field>
         <id>icapeg.general.clamav_max_filesize</id>
         <label>Maximum file size</label>
@@ -278,12 +198,6 @@
         <help>Enable this feature if you want to  return original if max file size exceeded </help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.clamav_return_original_if_max_file_size_exceeded</id>
-        <label>return original if max file size exceeded</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
     <!-- CLAMAV 6 ####################### -->
      <field>
         <id>icapeg.general.clamav_return_400_if_file_ext_rejected</id>
@@ -292,17 +206,6 @@
         <help>Enable this feature if you want to return 400 if file extention rejected</help>
     </field>
     <!-- ##################### -->
-    <!-- <field>
-        <id>icapeg.general.clamav_return_400_if_file_ext_rejected</id>
-        <label>return 400 if file ext rejected</label>
-        <type>text</type>
-        <help>options: true or false </help>
-    </field> -->
-
-
-
-
-
         <field>
                 <id>icapeg.general.grayimagesHeader</id>
                 <label>GrayImages services</label>
@@ -315,28 +218,12 @@
                 <type>checkbox</type>
                 <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
             </field>
-             <!-- ##################### -->
-                <!-- <field>
-                <id>icapeg.general.grayimages_req_mode</id>
-                <label>Enable request mode</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
-            <!-- grayimages 2 ####################### -->
             <field>
                 <id>icapeg.grayimages.grayimages_resp_mode</id>
                 <label>Enable response mode</label>
                 <type>checkbox</type>
                 <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
             </field>
-            <!-- ##################### -->
-           <!--  <field>
-                <id>icapeg.general.grayimages_resp_mode</id>
-                <label>Enable response mode</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
-            <!-- grayimages 3 ####################### -->
             <field>
         <id>icapeg.general.grayimages_process_extensions </id>
         <label>grayimages_process_extensions</label>
@@ -390,12 +277,6 @@
                 <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
             </field>
             <!-- ##################### -->
-            <!-- <field>
-                <id>icapeg.general.grayimages_shadow_service</id>
-                <label>Enable shadow service</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
             <!-- grayimages 4 ####################### -->
             <field>
                 <id>icapeg.general.grayimages_preview_enabled</id>
@@ -410,24 +291,12 @@
                 <type>text</type>
                 <help>preview bytes </help>
             </field>
-            <!-- <field>
-                <id>icapeg.general.grayimages_preview_enabled</id>
-                <label>Preview enabled</label>
-                <type>text</type>
-                <help>options: true or false </help>
-            </field> -->
             <field>
                 <id>icapeg.general.grayimages_max_filesize</id>
                 <label>Maximum file size</label>
                 <type>text</type>
                 <help>write 0 for unlimited file size </help>
             </field>
-           <!--  <field>
-                <id>icapeg.general.grayimages_return_original_if_max_file_size_exceeded</id>
-                <label>return original if max file size exceeded</label>
-                <type>text</type>
-                <help>options: true or false </help>
-            </field> -->
             <!-- grayimages 5 ####################### -->
             <field>
                 <id>icapeg.general.grayimages_return_original_if_max_file_size_exceeded</id>
@@ -436,18 +305,7 @@
                 <help>Enable this feature if you want to  return original if max file size exceeded </help>
             </field>
             <!-- ##################### -->
-             <!-- grayimages 6 ####################### -->
-            
-              <!-- ##################### -->
-             <!-- <field>
-                <id>icapeg.general.grayimages_return_400_if_file_ext_rejected</id>
-                <label>return 400 if file ext rejected</label>
-                <type>dropdown</type>
-                <help>options: true or false </help>
-            </field> -->
-
-
-
+        
 
 
 
@@ -463,28 +321,12 @@
                 <type>checkbox</type>
                 <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
             </field>
-             <!-- ##################### -->
-                <!-- <field>
-                <id>icapeg.general.virustotal_req_mode</id>
-                <label>Enable request mode</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
-            <!-- virustotal 2 ####################### -->
             <field>
                 <id>icapeg.virustotal.virustotal_resp_mode</id>
                 <label>Enable response mode</label>
                 <type>checkbox</type>
                 <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
             </field>
-            <!-- ##################### -->
-           <!--  <field>
-                <id>icapeg.general.virustotal_resp_mode</id>
-                <label>Enable response mode</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
-            <!-- virustotal 3 ####################### -->
             <field>
         <id>icapeg.general.virustotal_process_extensions </id>
         <label>virustotal_process_extensions</label>
@@ -544,12 +386,6 @@
                 <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
             </field>
             <!-- ##################### -->
-            <!-- <field>
-                <id>icapeg.general.virustotal_shadow_service</id>
-                <label>Enable shadow service</label>
-                <type>text</type>
-                <help>options: true or false</help>
-            </field> -->
             <!-- virustotal 4 ####################### -->
             <field>
                 <id>icapeg.general.virustotal_preview_enabled</id>
@@ -564,24 +400,12 @@
                 <type>text</type>
                 <help>preview bytes </help>
             </field>
-            <!-- <field>
-                <id>icapeg.general.virustotal_preview_enabled</id>
-                <label>Preview enabled</label>
-                <type>text</type>
-                <help>options: true or false </help>
-            </field> -->
             <field>
                 <id>icapeg.general.virustotal_max_filesize</id>
                 <label>Maximum file size</label>
                 <type>text</type>
                 <help>write 0 for unlimited file size </help>
             </field>
-           <!--  <field>
-                <id>icapeg.general.virustotal_return_original_if_max_file_size_exceeded</id>
-                <label>return original if max file size exceeded</label>
-                <type>text</type>
-                <help>options: true or false </help>
-            </field> -->
             <!-- virustotal 5 ####################### -->
             <field>
                 <id>icapeg.general.virustotal_return_original_if_max_file_size_exceeded</id>
@@ -590,20 +414,5 @@
                 <help>Enable this feature if you want to  return original if max file size exceeded </help>
             </field>
             <!-- ##################### -->
-             <!-- virustotal 6 ####################### -->
-            
-              <!-- ##################### -->
-             <!-- <field>
-                <id>icapeg.general.virustotal_return_400_if_file_ext_rejected</id>
-                <label>return 400 if file ext rejected</label>
-                <type>dropdown</type>
-                <help>options: true or false </help>
-            </field> -->
-
-
-
-            
-
-
         </form>
 
