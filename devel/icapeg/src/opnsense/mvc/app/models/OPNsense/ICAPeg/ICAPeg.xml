@@ -23,7 +23,7 @@
                         <TEXT>Fatal</TEXT>
                     </OptionValues>
             </LogLevel>
-            <WritingLogsToConsole type="TextField">
+            <WritingLogsToConsole type="BooleanField">
                 <default>false</default>
                 <Required>Y</Required>
             </WritingLogsToConsole>
