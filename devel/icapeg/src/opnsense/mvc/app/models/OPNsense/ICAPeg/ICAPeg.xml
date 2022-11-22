@@ -362,7 +362,7 @@
             </virustotal_scan_url>
             <virustotal_report_url type="TextField">
                 <default>"https://www.virustotal.com/vtapi/v2/file/report"</default>
-                <Required>Y</Required>
+                <Required>N</Required>
             </virustotal_report_url>
             <virustotal_api_key type="TextField">
                 <default>"a3f2c1f6f3e68e0b2ccfc63002aa4cb4896b7ea43b6aca2c2ff688153010cd89"</default>
