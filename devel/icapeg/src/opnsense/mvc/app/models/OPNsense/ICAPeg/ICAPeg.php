@@ -35,3 +35,32 @@ use OPNsense\Base\BaseModel;
 class ICAPeg extends BaseModel
 {
 }
+namespace OPNsense\Base\FieldTypes;
+
+/**
+ * Class OptionField
+ * @package OPNsense\Base\FieldTypes
+ */
+class OptionField extends BaseListField
+{
+    /**
+     * setter for option values
+     * @param $data
+     */
+    public function setOptionValues($data)
+    {
+        if (is_array($data)) {
+            $this->internalOptionList = array();
+            // copy options to internal structure, make sure we don't copy in array structures
+            foreach ($data as $key => $value) {
+                if (!is_array($value)) {
+                    if ($key === "__empty__") {
+                        $this->internalOptionList[""] = gettext($value);
+                    } else {
+                        $this->internalOptionList[$key] = gettext($value);
+                    }
+                }
+            }
+        }
+    }
+}
