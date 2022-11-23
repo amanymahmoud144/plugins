@@ -29,10 +29,14 @@
 
     perform some tests for the icapeg application
 """
+from operator import itemgetter
+import string
 import subprocess
 import sys
 from traceback import print_tb
 import toml
+import re
+import json
 
 Conf_file_path = "/usr/local/etc/icapeg/icapeg.conf"
 toml_file_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml"
@@ -49,7 +53,9 @@ def update_toml(Conf_file_path,toml_file_path):
     toml_file = toml.load(toml_file_path) 
     conf_file = open(Conf_file_path, 'r')
     toml_string = conf_file.read()
-    config_dict = toml.loads(toml_string)
+    toml_string_rep=(toml_string.replace('1"', 'true"'))
+    toml_string_rep1=(toml_string_rep.replace('0"', 'false"'))
+    config_dict = toml.loads(toml_string_rep1)
     for key_1 in config_dict:
         if type(config_dict[key_1]) is dict:
             for key_2 in config_dict[key_1]:
