@@ -9,6 +9,8 @@
     <field>
         <id>icapeg.general.LogLevel </id>
         <label>LogLevel</label>
+        <select multiple="multiple" id="icapeg.general.LogLevel">
+    </select>
         <type>select_multiple</type>
         <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
     </field>
