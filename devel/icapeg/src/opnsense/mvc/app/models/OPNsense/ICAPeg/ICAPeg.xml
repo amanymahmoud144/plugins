@@ -12,7 +12,7 @@
                 <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
-            <LogLevel type="select_multiple">
+            <LogLevel type="OptionField">
                 <default>Debug,Info,Error,Fatal</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
