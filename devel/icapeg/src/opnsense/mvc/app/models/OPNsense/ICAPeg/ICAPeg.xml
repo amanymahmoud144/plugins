@@ -17,7 +17,6 @@
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                    <opt1 value='1'>option1</opt1>
                         <TEXT>Debug</TEXT>
                         <TEXT>Info</TEXT>
                         <TEXT>Error</TEXT>
