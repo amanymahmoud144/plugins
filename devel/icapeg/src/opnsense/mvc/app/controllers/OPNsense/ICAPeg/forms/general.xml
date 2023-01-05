@@ -447,14 +447,14 @@
                 unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
-        <id>icapeg.general.clhashlookup_reject_extensions </id>
+        <id>icapeg.general.clhashlookup_reject_extensions</id>
         <label>clhashlookup_reject_extensions</label>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
                 unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
-        <id>icapeg.general.clhashlookup_bypass_extensions </id>
+        <id>icapeg.general.clhashlookup_bypass_extensions</id>
         <label>clhashlookup_bypass_extensions</label>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
