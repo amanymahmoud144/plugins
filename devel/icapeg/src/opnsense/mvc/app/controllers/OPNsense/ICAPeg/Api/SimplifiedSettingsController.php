@@ -31,6 +31,8 @@
 namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
+use OPNsense\Base\BaseModel;
+
 
 /**
  * a simplified settings controller for our ICAPeg app, uses our ApiMutableModelControllerBase type

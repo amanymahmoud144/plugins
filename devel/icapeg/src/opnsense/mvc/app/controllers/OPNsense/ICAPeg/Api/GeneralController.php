@@ -29,6 +29,7 @@
 namespace OPNsense\CICAP\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
+use OPNsense\Base\BaseModel;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
