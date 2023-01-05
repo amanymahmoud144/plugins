@@ -28,11 +28,10 @@
 
 namespace OPNsense\ICAPeg\Api;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+// use OPNsense\Base\ApiMutableModelControllerBase;
 use OPNsense\Base\BaseModel;
 
-class GeneralController extends ApiMutableModelControllerBase
+class GeneralController extends BaseModel
 {
-    protected static $internalModelClass = '\OPNsense\ICAPeg\General';
-    protected static $internalModelName = 'general';
+    
 }
