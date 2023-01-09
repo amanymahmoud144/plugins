@@ -225,7 +225,6 @@
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </grayimages_bypass_extensions>
@@ -286,11 +285,9 @@
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT value='1'>option1</TEXT>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_process_extensions>
@@ -302,7 +299,6 @@
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_reject_extensions>
@@ -314,7 +310,6 @@
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_bypass_extensions>
