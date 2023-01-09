@@ -55,7 +55,7 @@ def update_toml(Conf_file_path,toml_file_path):
     toml_string = conf_file.read()
     toml_string_rep=(toml_string.replace('1"', 'true"'))
     toml_string_rep1=(toml_string_rep.replace('0"', 'false"'))
-    toml_string_rep2=(toml_string_rep1.replace("TEXT", '[txt",'))
+    toml_string_rep2=(toml_string_rep1.replace("TEXT", 'txt"'))
     toml_string_rep3=(toml_string_rep2.replace("DATA", 'pdf"'))
     toml_string_rep4=(toml_string_rep3.replace("EXECUTABLE", 'exe"'))
     toml_string_rep5=(toml_string_rep4.replace("MSOFFICE", 'docx"'))
