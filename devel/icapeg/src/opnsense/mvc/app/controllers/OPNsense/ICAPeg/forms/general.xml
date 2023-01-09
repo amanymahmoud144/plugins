@@ -4,36 +4,555 @@
         <label>Port number</label>
         <type>text</type>
         <help><![CDATA[default port of ICAPeg]]></help>
-        <help>1344</help>
+        <help>ICAP default port number 1344</help>
     </field>
     <field>
-        <id>icapeg.general.LogLevel</id>
-        <label>Log Level</label>
-        <type>dropdown</type>
-        <help><![CDATA[level of logs ex: debug, info and error .. etc]]></help>
+        <id>icapeg.general.LogLevel </id>
+        <label>LogLevel</label>
+        <select multiple="multiple" id="icapeg.general.LogLevel">
+    </select>
+        <type>select_multiple</type>
+        <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
     </field>
-    <field>
+    <!--  1 ####################### -->
+     <field>
         <id>icapeg.general.WritingLogsToConsole</id>
         <label>Writing logs to console</label>
         <type>checkbox</type>
-        <help>Disable this feature</help>
+        <help>Writing logs on the ICAPeg console</help>
     </field>
-    <field>
+    <!-- ##################### -->
+     <!-- 2 ####################### -->
+     <field>
         <id>icapeg.general.DebuggingHeaders</id>
         <label>Debugging headers</label>
         <type>checkbox</type>
-        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service</help>
+        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service </help>
+    </field>
+    <!-- ##################### -->
+    <field>
+        <id>icapeg.general.echoHeader</id>
+        <label>Echo services</label>
+        <type>header</type>
+    </field>
+     <!-- echo 1 ####################### -->
+     <field>
+        <id>icapeg.general.echo_req_mode</id>
+        <label>Enable request mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+    </field>
+    <!-- ##################### -->
+     <!-- echo 2 ####################### -->
+     <field>
+        <id>icapeg.general.echo_resp_mode</id>
+        <label>Enable response mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
+    </field>
+    <!-- ##################### -->
+    <field>
+        <id>icapeg.general.echo_process_extensions </id>
+        <label>echo_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
-        <id>icapeg.general.WebServerHost</id>
-        <label>Web server host</label>
-        <type>text</type>
-        <help><![CDATA[the host of web server which reponse with html message]]></help>
+        <id>icapeg.general.echo_reject_extensions </id>
+        <label>echo_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
-        <id>icapeg.general.WebServerEndpoint</id>
-        <label>Web server endpoint</label>
-        <type>text</type>
-        <help><![CDATA[the endpoint of web server which reponse with html message]]></help>
+        <id>icapeg.general.echo_bypass_extensions </id>
+        <label>echo_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
     </field>
-</form>
+     <!-- echo 3 ####################### -->
+     <field>
+        <id>icapeg.general.echo_shadow_service</id>
+        <label>Enable shadow service</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+    </field>
+    <!-- ##################### -->
+    <!-- echo 4 ####################### -->
+     <field>
+        <id>icapeg.general.echo_preview_enabled</id>
+        <label>Preview enabled</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to enable Preview bytes on files </help>
+    </field>
+    <!-- ##################### -->
+    <field>
+        <id>icapeg.general.echo_preview_bytes</id>
+        <label>Preview bytes</label>
+        <type>text</type>
+        <help>preview bytes </help>
+    </field>
+    <field>
+        <id>icapeg.general.echo_max_filesize</id>
+        <label>Maximum file size</label>
+        <type>text</type>
+        <help>write 0 for unlimited file size </help>
+    </field>
+    <!-- echo 5 ####################### -->
+     <field>
+        <id>icapeg.general.echo_return_original_if_max_file_size_exceeded</id>
+        <label>Return original</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to  return original if max file size exceeded </help>
+    </field>
+    <!-- ##################### -->
+    <!-- echo 6 ####################### -->
+     <field>
+        <id>icapeg.general.echo_return_400_if_file_ext_rejected</id>
+        <label>Return 400 </label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to return 400 if file extention rejected</help>
+    </field>
+    <!-- ##################### -->
+    <field>
+        <id>icapeg.general.clamavHeader</id>
+        <label>Clamav services</label>
+        <type>header</type>
+    </field>
+    <!-- clamav 1 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_req_mode</id>
+        <label>Enable request mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+    </field>
+    <!-- ##################### -->
+    <!-- clamav 2 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_resp_mode</id>
+        <label>Enable response mode</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
+    </field>
+    <!-- ##################### -->
+     <!-- clamav 3 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_process_extensions </id>
+        <label>clamav_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_reject_extensions </id>
+        <label>clamav_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_bypass_extensions </id>
+        <label>clamav_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_timeout</id>
+        <label>Timeout</label>
+        <type>text</type>
+        <help>Time in seconds,the time upto which the server will wait for clamav to scan the results </help>
+    </field>
+     <field>
+        <id>icapeg.general.clamav_shadow_service</id>
+        <label>Enable shadow service</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+    </field>
+    <!-- ##################### -->
+    <!-- clamav 4 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_preview_enabled</id>
+        <label>Preview enabled</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to enable Preview bytes on files </help>
+    </field>
+    <!-- ##################### -->
+    <field>
+        <id>icapeg.general.clamav_preview_bytes</id>
+        <label>Preview bytes</label>
+        <type>text</type>
+        <help>preview bytes </help>
+    </field>
+    <field>
+        <id>icapeg.general.clamav_max_filesize</id>
+        <label>Maximum file size</label>
+        <type>text</type>
+        <help>write 0 for unlimited file size </help>
+    </field>
+    <!-- clamav 5 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_return_original_if_max_file_size_exceeded</id>
+        <label>Return original</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to  return original if max file size exceeded </help>
+    </field>
+    <!-- ##################### -->
+    <!-- CLAMAV 6 ####################### -->
+     <field>
+        <id>icapeg.general.clamav_return_400_if_file_ext_rejected</id>
+        <label>Return 400 </label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to return 400 if file extention rejected</help>
+    </field>
+    <!-- ##################### -->
+        <field>
+                <id>icapeg.general.grayimagesHeader</id>
+                <label>GrayImages services</label>
+                <type>header</type>
+                </field>
+                <!-- grayimages 1 ####################### -->
+            <field>
+                <id>icapeg.general.grayimages_req_mode</id>
+                <label>Enable request mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+            </field>
+            <field>
+                <id>icapeg.grayimages.grayimages_resp_mode</id>
+                <label>Enable response mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Response mode </help>
+            </field>
+            <field>
+        <id>icapeg.general.grayimages_process_extensions </id>
+        <label>grayimages_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.grayimages_reject_extensions </id>
+        <label>grayimages_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.grayimages_bypass_extensions </id>
+        <label>grayimages_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.grayimages_timeout</id>
+        <label>Timeout</label>
+        <type>text</type>
+        <help>Time in seconds,the time upto which the server will wait for grayimages to scan the results.
+                ICAP will return 408 - Request timeout </help>
+    </field>
+    <field>
+        <id>icapeg.general.grayimages_fail_threshold</id>
+        <label>Fail_threshold</label>
+        <type>text</type>
+        <help> </help>
+    </field>
+    <field>
+                <id>icapeg.general.grayimages_base_url</id>
+                <label>Base_URL</label>
+                <type>text</type>
+                <help> </help>
+            </field>
+            <field>
+                <id>icapeg.general.grayimages_api_key</id>
+                <label>API_Key</label>
+                <type>text</type>
+                <help> Please write the api key between Double Quotation</help>
+            </field>
+            <field>
+                <id>icapeg.general.grayimages_shadow_service</id>
+                <label>Enable shadow service</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+            </field>
+            <!-- ##################### -->
+            <!-- grayimages 4 ####################### -->
+            <field>
+                <id>icapeg.general.grayimages_preview_enabled</id>
+                <label>Preview enabled</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to enable Preview bytes on files </help>
+            </field>
+            <!-- ##################### -->
+            <field>
+                <id>icapeg.general.grayimages_preview_bytes</id>
+                <label>Preview bytes</label>
+                <type>text</type>
+                <help>preview bytes </help>
+            </field>
+            <field>
+                <id>icapeg.general.grayimages_max_filesize</id>
+                <label>Maximum file size</label>
+                <type>text</type>
+                <help>write 0 for unlimited file size </help>
+            </field>
+            <!-- grayimages 5 ####################### -->
+            <field>
+                <id>icapeg.general.grayimages_return_original_if_max_file_size_exceeded</id>
+                <label>Return original</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to  return original if max file size exceeded </help>
+            </field>
+            <!-- ##################### -->
+        
+
+
+
+            <field>
+                <id>icapeg.general.virustotalHeader</id>
+                <label>virustotal services</label>
+                <type>header</type>
+                </field>
+                <!-- virustotal 1 ####################### -->
+            <field>
+                <id>icapeg.general.virustotal_req_mode</id>
+                <label>Enable request mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_resp_mode</id>
+                <label>Enable response mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+            </field>
+            <field>
+        <id>icapeg.general.virustotal_process_extensions </id>
+        <label>virustotal_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.virustotal_reject_extensions </id>
+        <label>virustotal_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.virustotal_bypass_extensions </id>
+        <label>virustotal_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.virustotal_timeout</id>
+        <label>Timeout</label>
+        <type>text</type>
+        <help>Time in seconds,the time upto which the server will wait for virustotal to scan the results.
+                ICAP will return 408 - Request timeout </help>
+    </field>
+    <field>
+        <id>icapeg.general.virustotal_fail_threshold</id>
+        <label>Fail_threshold</label>
+        <type>text</type>
+        <help> </help>
+    </field>
+    <field>
+                <id>icapeg.general.virustotal_scan_url</id>
+                <label>Scan_URL</label>
+                <type>text</type>
+                <help>Please write the scan url link betweenDouble Quotation</help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_report_url</id>
+                <label>Report_URL</label>
+                <type>text</type>
+                <help> Please write the report url between Double Quotation</help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_api_key</id>
+                <label>API_Key</label>
+                <type>text</type>
+                <help>Please write the api key between Double Quotation</help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_shadow_service</id>
+                <label>Enable shadow service</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+            </field>
+            <!-- ##################### -->
+            <!-- virustotal 4 ####################### -->
+            <field>
+                <id>icapeg.general.virustotal_preview_enabled</id>
+                <label>Preview enabled</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to enable Preview bytes on files </help>
+            </field>
+            <!-- ##################### -->
+            <field>
+                <id>icapeg.general.virustotal_preview_bytes</id>
+                <label>Preview bytes</label>
+                <type>text</type>
+                <help>preview bytes </help>
+            </field>
+            <field>
+                <id>icapeg.general.virustotal_max_filesize</id>
+                <label>Maximum file size</label>
+                <type>text</type>
+                <help>write 0 for unlimited file size </help>
+            </field>
+            <!-- virustotal 5 ####################### -->
+            <field>
+                <id>icapeg.general.virustotal_return_original_if_max_file_size_exceeded</id>
+                <label>Return original</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to  return original if max file size exceeded </help>
+            </field>
+            <!-- ##################### -->
+
+
+
+<!-- ######################### clhashlookup####################### -->
+
+<field>
+                <id>icapeg.general.clhashlookupHeader</id>
+                <label>clhashlookup services</label>
+                <type>header</type>
+                </field>
+                <!-- clhashlookup 1 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_req_mode</id>
+                <label>Enable request mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+            </field>
+            <field>
+                <id>icapeg.general.clhashlookup_resp_mode</id>
+                <label>Enable response mode</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
+            </field>
+            <field>
+        <id>icapeg.general.clhashlookup_process_extensions </id>
+        <label>clhashlookup_process_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clhashlookup_reject_extensions</id>
+        <label>clhashlookup_reject_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clhashlookup_bypass_extensions</id>
+        <label>clhashlookup_bypass_extensions</label>
+        <type>select_multiple</type>
+        <help> Choose for which Options. Everything except the ones in bypass, 
+                unknown = system couldn't find out the type of the file</help>
+    </field>
+    <field>
+        <id>icapeg.general.clhashlookup_timeout</id>
+        <label>Timeout</label>
+        <type>text</type>
+        <help>Time in seconds,the time upto which the server will wait for clhashlookup to scan the results.
+                ICAP will return 408 - Request timeout </help>
+    </field>
+    <field>
+        <id>icapeg.general.clhashlookup_fail_threshold</id>
+        <label>Fail_threshold</label>
+        <type>text</type>
+        <help> </help>
+    </field>
+    <field>
+                <id>icapeg.general.clhashlookup_scan_url</id>
+                <label>Scan_URL</label>
+                <type>text</type>
+                <help>Please write the scan url link betweenDouble Quotation</help>
+            </field>
+            <field>
+                <id>icapeg.general.clhashlookup_shadow_service</id>
+                <label>Enable shadow service</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to add debugging headers to ICAPeg-Shadow-Service </help>
+            </field>
+            <!-- ##################### -->
+            <!-- clhashlookup 4 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_preview_enabled</id>
+                <label>Preview enabled</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to enable Preview bytes on files </help>
+            </field>
+            <!-- ##################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_preview_bytes</id>
+                <label>Preview bytes</label>
+                <type>text</type>
+                <help>preview bytes </help>
+            </field>
+            <field>
+                <id>icapeg.general.clhashlookup_max_filesize</id>
+                <label>Maximum file size</label>
+                <type>text</type>
+                <help>write 0 for unlimited file size </help>
+            </field>
+            <!-- clhashlookup 5 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_return_original_if_max_file_size_exceeded</id>
+                <label>Return original</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to  return original if max file size exceeded </help>
+            </field>
+            <!-- ##################### -->
+            <!-- clhashlookup 5 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_verify_server_cert</id>
+                <label>Verify Server Cert</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to enable Server Cert </help>
+            </field>
+            
+            <!-- ##################### -->
+
+            <!-- clhashlookup 6 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_bypass_on_api_error</id>
+                <label>Bypass On Api Error</label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to Bypass On Api Error </help>
+            </field>
+            <!-- ##################### -->
+
+            <!-- clhashlookup 7 ####################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_http_exception_has_body </id>
+                <label>Http Exception has Body </label>
+                <type>checkbox</type>
+                <help>Enable this feature if you want to enable Http Exception has Body  </help>
+            </field>
+            <!-- ##################### -->
+            <field>
+                <id>icapeg.general.clhashlookup_http_exception_response_code</id>
+                <label>Http Exception Response Code</label>
+                <type>text</type>
+                <help>http_exception_response_code</help>
+            </field>
+
+            <field>
+                <id>icapeg.general.clhashlookup_exception_page</id>
+                <label>Exception Page</label>
+                <type>text</type>
+                <help>exception_page</help>
+            </field>
+
+        </form>

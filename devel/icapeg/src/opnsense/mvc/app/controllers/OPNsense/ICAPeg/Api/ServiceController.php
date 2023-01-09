@@ -44,6 +44,9 @@ class ServiceController extends ApiControllerBase
      */
     public function reloadAction()
     {
+
+        $command = escapeshellcmd('python3 /usr/local/opnsense/scripts/OPNsense/ICAPeg/testConnection.py');
+        $output = shell_exec($command);
         $status = "failed";
         if ($this->request->isPost()) {
             $backend = new Backend();
@@ -53,21 +56,7 @@ class ServiceController extends ApiControllerBase
             }
         }
         return array("status" => $status);
+
     }
 
-    /**
-     * test ICAPeg
-     */
-    public function testAction()
-    {
-        if ($this->request->isPost()) {
-            $backend = new Backend();
-            $bckresult = json_decode(trim($backend->configdRun("icapeg test")), true);
-            if ($bckresult !== null) {
-                // only return valid json type responses
-                return $bckresult;
-            }
-        }
-        return array("message" => "unable to run config action");
-    }
 }

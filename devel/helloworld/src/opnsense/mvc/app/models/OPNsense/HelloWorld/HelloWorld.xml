@@ -22,6 +22,14 @@
                 <Required>Y</Required>
                 <ValidationMessage>please specify a valid email address</ValidationMessage>
             </ToEmail>
+            <ADKerberosImplementation type="OptionField">
+                <default>W2008</default>
+                <Required>Y</Required>
+                <OptionValues>
+                    <W2003>Windows 2003</W2003>
+                    <W2008>Windows 2008 with AES</W2008>
+                </OptionValues>
+    </ADKerberosImplementation>
             <Description type="TextField">
                 <Required>Y</Required>
             </Description>

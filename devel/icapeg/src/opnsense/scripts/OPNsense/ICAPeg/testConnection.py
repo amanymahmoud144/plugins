@@ -29,54 +29,55 @@
 
     perform some tests for the icapeg application
 """
-import os
-import socket
-import smtplib
+from operator import itemgetter
+import string
+import subprocess
+import sys
+from traceback import print_tb
+import toml
+import re
 import json
-from configparser import ConfigParser
 
-# set default timeout to 2 seconds
-socket.setdefaulttimeout(2)
-
-icapeg_config = '/usr/local/etc/icapeg/icapeg.conf'
-
-# create output file for testing code 
-
-out_file = open("email.txt")
-
-result = {}
-if os.path.exists(icapeg_config):
-    cnf = ConfigParser()
-    cnf.read(icapeg_config)
-    if cnf.has_section('general'):
-        try:
-            # smtpObj = smtplib.SMTP(cnf.get('general', 'SMTPHost'))
-            msg_header = "From: " + cnf.get('general', 'FromEmail') + "\n" + \
-                         "To: " + cnf.get('general', 'ToEmail') + "\n" + \
-                         "Subject: " + cnf.get('general', 'Subject') + "\n" + \
-                         "Test message!"
-
-            # smtpObj.sendmail(cnf.get('general', 'FromEmail'), [cnf.get('general', 'ToEmail')], msg_header)
-            # smtpObj.quit()
-            out_file.write(msg_header)
-            out_file.close()
-            result['message'] = 'test ok!'
-        except smtplib.SMTPException as error:
-            # unable to send mail
-            result['message'] = '%s' % error
-        except socket.error as error:
-            # connect error
-            if error.strerror is None:
-                # probably hit timeout
-                result['message'] = 'time out!'
-            else:
-                result['message'] = error.strerror
-    else:
-        # empty config
-        result['message'] = 'empty configuration'
-else:
-    # no config
-    result['message'] = 'no configuration file found'
+Conf_file_path = "/usr/local/etc/icapeg/icapeg.conf"
+toml_file_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml"
+icapeg_path = "/usr/local/opnsense/scripts/OPNsense/ICAPeg/icapeg"
 
 
-print (json.dumps(result))
+def main():
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/outside_main'], shell=True)
+    update_toml(Conf_file_path,toml_file_path)
+    restart_icapeg(icapeg_path)
+
+def update_toml(Conf_file_path,toml_file_path):
+    subprocess.run(['touch /usr/local/opnsense/scripts/OPNsense/ICAPeg/inside_updateToml'], shell=True)
+    toml_file = toml.load(toml_file_path) 
+    conf_file = open(Conf_file_path, 'r')
+    toml_string = conf_file.read()
+    toml_string_rep=(toml_string.replace('1"', 'true"'))
+    toml_string_rep1=(toml_string_rep.replace('0"', 'false"'))
+    toml_string_rep2=(toml_string_rep1.replace("TEXT", "txt"))
+    toml_string_rep3=(toml_string_rep2.replace("EXECUTABLE", "exe"))
+    toml_string_rep4=(toml_string_rep3.replace("MSOFFICE", "docx")) 
+    config_dict = toml.loads(toml_string_rep4)
+    for key_1 in config_dict:
+        if type(config_dict[key_1]) is dict:
+            for key_2 in config_dict[key_1]:
+                toml_file[key_1][key_2] = config_dict[key_1][key_2]
+        else:
+            toml_file[key_1] = config_dict[key_1]
+
+    config_toml = open("/usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml",'w')
+    toml.dump(toml_file, config_toml)
+    config_toml.close()
+        
+
+
+def restart_icapeg(icapeg_path):
+    subprocess.run(['cp /usr/local/opnsense/scripts/OPNsense/ICAPeg/block-page.html .'], shell=True)
+    subprocess.run(['cp /usr/local/opnsense/scripts/OPNsense/ICAPeg/config.toml .'], shell=True)
+    subprocess.run(['chmod +x ' + icapeg_path], shell=True)
+    subprocess.run(['killall -9 icapeg || true'], shell=True)
+    subprocess.run([icapeg_path + ' 2> /dev/null &'], shell=True)
+
+
+main()

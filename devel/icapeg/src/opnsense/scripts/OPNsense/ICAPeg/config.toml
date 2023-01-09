@@ -1,0 +1,167 @@
+#"Reading from env variable if value is not in toml file feature"
+#feature is supported for strings, int, bool, time.duration and string slices only
+#(every type used in this project)
+
+#to use this feature you have to do the next
+#assume that there is an env variable called LOG_LEVEL and you want to assign LOG_LEVEL value to app.log_level
+#You will change the value of (log_level= "debug") to (log_level= "$_LOG_LEVEL")
+
+#If you want to add an array as an env variable in your machine, please add backslash before special characters
+#like white spaces, double quotes and comas, example:
+#export ARRAY= "[\"txt\", \"pdf\", \"dmg\", \"exe\", \"com\", \"rar\", \"unknown\"]"
+#Don't forget to put the value between double quotes in case there are white spaces in the value.
+
+#NOTE: before you use this feature please make sure that the env variable that you want to use is globally in
+# your machine and not just exported in a local session
+
+
+title = "ICAP configuration file"
+
+[app]
+port = 11344
+log_level="debug"
+write_logs_to_console= false
+services= ["echo", "virustotal", "clamav", "cloudmersive", "grayimages", "clhashlookup"]
+debugging_headers=true
+web_server_host = "$_WEB_SERVER_HOST"
+web_server_endpoint = "$_WEB_SERVER_ENDPOINT"
+
+[echo]
+vendor = "echo"
+service_caption= "echo service"   #Service
+service_tag = "ECHO ICAP"  #ISTAG
+req_mode=true
+resp_mode=true
+shadow_service=false
+preview_bytes = "1024" #byte
+preview_enabled = true# options send preview header or not
+process_extensions = [ "zip", "com"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = ["docx","pdf"]
+bypass_extensions = ["*"]
+#max file size value from 1 to 9223372036854775807, and value of zero means unlimited
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=false
+return_400_if_file_ext_rejected=false
+
+
+[virustotal]
+vendor = "virustotal"
+service_caption= "virustotal service"   #Service
+service_tag = "Virustotal ICAP"  #ISTAG
+req_mode=true # enable support for ICAP request mode
+resp_mode=true # enable support for ICAP response mode
+shadow_service=false
+preview_bytes = "1024" #byte
+preview_enabled = true# options send preview header or not
+process_extensions = ["pdf", "zip", "com"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = ["docx"]
+bypass_extensions = ["*"]
+scan_url = "https://www.virustotal.com/vtapi/v2/file/scan" #
+report_url = "https://www.virustotal.com/vtapi/v2/file/report" #
+api_key = "$_VIRUSTOTAL_API_KEY"
+timeout  = 1000 #seconds , ICAP will return 408 - Request timeout
+#max file size value from 1 to 9223372036854775807, and value of zero means unlimited
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=false
+return_400_if_file_ext_rejected=false
+
+
+[cloudmersive]
+vendor = "cloudmersive"
+service_caption= "cloudmersive service"   #Service
+service_tag = "CLOUDMERSIVE ICAP"  #ISTAG
+req_mode=true
+resp_mode=true
+shadow_service=false
+preview_enabled = false# options send preview header or not
+preview_bytes = "1024" #byte
+timeout  = 300 #seconds , ICAP will return 408 - Request timeout
+#max file size value from 1 to 9223372036854775807, and value of zero means unlimited
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=false
+return_400_if_file_ext_rejected=false
+process_extensions = ["pdf", "zip", "com"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = ["docx"]
+bypass_extensions = ["*"]
+verify_server_cert=false
+base_url = "$_CLOUDMERSIVE_BASE_URL" #
+scan_endpoint = "/virus/scan/file/advanced"
+api_key = "$_CLOUDMERSIVE_API_KEY"
+allow_executables = true
+allow_invalid_files = false
+allow_scripts = true
+allow_password_protected_files = false
+allow_macros = false
+allow_xml_external_entities = false
+allow_html = true
+allow_insecure_deserialization = false
+
+[grayimages]
+vendor = "grayimages"
+service_caption= "grayimages service"   #Service
+service_tag = "GRAYIMAGES ICAP"  #ISTAG
+req_mode=true
+resp_mode=true
+shadow_service=false
+preview_bytes = "1024" #byte
+preview_enabled = true# options send preview header or not
+bypass_extensions = ["*"]
+process_extensions = ["png"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = [""]
+base_url = "" #
+scan_endpoint = "<grayimages>"
+api_key = "<api key>"
+timeout  = 300 #seconds , ICAP will return 408 - Request timeout
+fail_threshold = 2
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=true
+return_400_if_file_ext_rejected=false
+
+[clhashlookup]
+vendor = "clhashlookup"
+service_caption= "cl-hashlookup"   #Service
+service_tag = "cl-hashlookup ICAP"  #ISTAG
+req_mode=true
+resp_mode=true
+shadow_service=false
+preview_bytes = "1024" #byte
+preview_enabled = true# options send preview header or not
+bypass_extensions = ["*"]
+process_extensions = ["pdf","exe", "zip"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = ["docx"]
+scan_url = "https://hashlookup.circl.lu/lookup/sha256/" #
+timeout  = 300 #seconds , ICAP will return 408 - Request timeout
+fail_threshold = 2
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=true
+return_400_if_file_ext_rejected=false
+verify_server_cert=true
+bypass_on_api_error=false
+http_exception_response_code = 403
+http_exception_has_body = true
+exception_page = "./temp/exception-page.html" # Location of the exception page for this service
+
+[clamav]
+vendor = "clamav"
+service_caption= "clamav service"   #Service
+service_tag = "CLAMAV ICAP"  #ISTAG
+req_mode=true
+resp_mode=true
+shadow_service=false
+preview_bytes = "1024" #byte
+preview_enabled = true# options send preview header or not
+process_extensions = ["pdf", "zip", "com"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
+reject_extensions = ["docx"]
+bypass_extensions = ["*"]
+socket_path = "/var/run/clamav/clamd.ctl"
+fail_threshold = 2
+timeout = 10 #seconds, the time upto which the server will wait for clamav to scan the results
+#max file size value from 1 to 9223372036854775807, and value of zero means unlimited
+max_filesize = 0 #bytes
+return_original_if_max_file_size_exceeded=false
+return_400_if_file_ext_rejected=false
+verify_server_cert=true
+bypass_on_api_error=false
+http_exception_response_code = 403
+http_exception_has_body = true
+exception_page = "./temp/exception-page.html" # Location of the exception page for this service
