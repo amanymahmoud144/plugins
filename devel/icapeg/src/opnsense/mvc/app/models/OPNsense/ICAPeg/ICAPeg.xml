@@ -46,44 +46,38 @@
                 <Required>Y</Required>
             </echo_resp_mode>
             <echo_process_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </echo_process_extensions>
             <echo_reject_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </echo_reject_extensions>
             <echo_bypass_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </echo_bypass_extensions>
@@ -127,44 +121,38 @@
                 <Required>Y</Required>
             </clamav_resp_mode>
             <clamav_process_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clamav_process_extensions>
             <clamav_reject_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clamav_reject_extensions>
             <clamav_bypass_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clamav_bypass_extensions>
@@ -213,44 +201,38 @@
                 <Required>Y</Required>
             </grayimages_resp_mode>
             <grayimages_process_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </grayimages_process_extensions>
             <grayimages_reject_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </grayimages_reject_extensions>
             <grayimages_bypass_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </grayimages_bypass_extensions>
@@ -307,7 +289,7 @@
                 <Required>Y</Required>
             </virustotal_resp_mode>
             <virustotal_process_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -315,37 +297,31 @@
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_process_extensions>
             <virustotal_reject_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_reject_extensions>
             <virustotal_bypass_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </virustotal_bypass_extensions>
@@ -408,7 +384,7 @@
                 <Required>Y</Required>
             </clhashlookup_resp_mode>
             <clhashlookup_process_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
@@ -416,37 +392,30 @@
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clhashlookup_process_extensions>
             <clhashlookup_reject_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clhashlookup_reject_extensions>
             <clhashlookup_bypass_extensions type="OptionField">
-                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+                <default>TEXT,DATA,EXECUTABLE,ARCHIVE,MSOFFICE</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
                         <TEXT>Text files</TEXT>
                         <DATA>Binary files</DATA>
                         <EXECUTABLE>Executables</EXECUTABLE>
-                        <ARCHIVE>Archives</ARCHIVE>
-                        <GIF>GIF animations</GIF>
-                        <JPEG>JPEG pictures</JPEG>
+                        
                         <MSOFFICE>Microsoft office files</MSOFFICE>
                     </OptionValues>
             </clhashlookup_bypass_extensions>
