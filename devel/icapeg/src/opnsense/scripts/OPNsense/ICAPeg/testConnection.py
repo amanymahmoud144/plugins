@@ -55,7 +55,6 @@ def update_toml(Conf_file_path,toml_file_path):
     toml_string = conf_file.read()
     toml_string_rep=(toml_string.replace('1"', 'true"'))
     toml_string_rep1=(toml_string_rep.replace('0"', 'false"'))
-
     config_dict = toml.loads(toml_string_rep1)
     for key_1 in config_dict:
         if type(config_dict[key_1]) is dict:
