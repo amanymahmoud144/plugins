@@ -55,6 +55,7 @@
                         <MSOFFICE>"docx"</MSOFFICE>
                     </OptionValues>
             </echo_process_extensions>
+
             <echo_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
