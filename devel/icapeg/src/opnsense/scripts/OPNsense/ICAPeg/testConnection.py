@@ -60,9 +60,6 @@ def update_toml(Conf_file_path,toml_file_path):
     toml_string_rep3=(toml_string_rep2.replace("EXECUTABLE", '"exe"'))
     toml_string_rep4=(toml_string_rep3.replace("MSOFFICE", '"docx"'))
 
-
-
-   
     config_dict = toml.loads(toml_string_rep4)
     for key_1 in config_dict:
         if type(config_dict[key_1]) is dict:
