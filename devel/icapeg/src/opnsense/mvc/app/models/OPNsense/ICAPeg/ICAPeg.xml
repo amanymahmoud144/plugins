@@ -13,14 +13,14 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>"Debug","Info","Error","Fatal"</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT>Debug</TEXT>
-                        <TEXT>Info</TEXT>
-                        <TEXT>Error</TEXT>
-                        <TEXT>Fatal</TEXT>
+                        <TEXT>"Debug"</TEXT>
+                        <TEXT>"Info"</TEXT>
+                        <TEXT>"Error"</TEXT>
+                        <TEXT>"Fatal"</TEXT>
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
@@ -46,13 +46,13 @@
                 <Required>Y</Required>
             </echo_resp_mode>
             <echo_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
+                <default>"txt","pdf","exe","zip","docx","doc"</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
+                        <TEXT>"txt"</TEXT>
+                        <EXECUTABLE>"exe"</EXECUTABLE>
+                        <MSOFFICE>"docx"</MSOFFICE>
                     </OptionValues>
             </echo_process_extensions>
             <echo_reject_extensions type="OptionField">

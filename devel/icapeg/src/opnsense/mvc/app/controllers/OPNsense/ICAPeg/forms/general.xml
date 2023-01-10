@@ -61,6 +61,8 @@
     <field>
         <id>icapeg.general.echo_reject_extensions </id>
         <label>echo_reject_extensions</label>
+         <select multiple="multiple" id="icapeg.general.echo_reject_extensions ">
+    </select>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
                 unknown = system couldn't find out the type of the file</help>
