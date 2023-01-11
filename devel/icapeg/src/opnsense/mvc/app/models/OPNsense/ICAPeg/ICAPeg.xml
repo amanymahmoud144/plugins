@@ -13,14 +13,16 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <default>DEBUG,INFO,ERROR,FATAL</default>
+                <!-- <default>DEBUG,INFO,ERROR,FATAL</default> -->
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <DEBUG>Debug</DEBUG>
+                        <!-- <DEBUG>Debug</DEBUG>
                         <INFO>Info</INFO>
                         <ERROR>Error</ERROR>
-                        <FATAL>Fatal</FATAL>
+                        <FATAL>Fatal</FATAL> -->
+                        <opt1 value='1'>option1</opt1>
+                         <opt2 value='2'>option1</opt2>
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
