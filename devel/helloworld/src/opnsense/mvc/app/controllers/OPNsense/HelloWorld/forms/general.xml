@@ -25,7 +25,7 @@
     <field>
 		<id>helloworld.general.ADKerberosImplementation</id>
 		<label>AD Kerberos implementation</label>
-		<type>dropdown</type>
+		<type>select_multiple</type>
 		<help>Select Windows Server version for AD controller</help>
 	</field>
     <field>
