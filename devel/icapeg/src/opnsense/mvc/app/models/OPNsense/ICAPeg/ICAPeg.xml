@@ -8,11 +8,11 @@
         <general>
             <!-- fields -->
             <PortNum type="PortField">
-                <default>  1344</default>
+                <default> 1344</default>
                 <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
-            <!-- <LogLevel type="OptionField">
+            <LogLevel type="OptionField">
                 <default>DEBUG,INFO,ERROR,FATAL</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
@@ -22,7 +22,7 @@
                         <ERROR>Error</ERROR>
                         <FATAL>Fatal</FATAL>
                     </OptionValues>
-            </LogLevel> -->
+            </LogLevel>
             <WritingLogsToConsole type="BooleanField">
                 <default>0</default>
                 <Required>Y</Required>
