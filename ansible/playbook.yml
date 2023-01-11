@@ -8,6 +8,6 @@
         state: present
     - name: ensure that git repo checkedout 
       git:
-        repo: 'https://github.com/MahmoudRabee/plugins'
+        repo: 'https://github.com/amanymahmoud144/plugins'
         dest: /srv/checkout
     - command: chdir=/srv/checkout/devel/icapeg/ make upgrade
