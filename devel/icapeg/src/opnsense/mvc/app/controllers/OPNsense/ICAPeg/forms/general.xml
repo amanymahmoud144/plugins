@@ -8,12 +8,19 @@
     </field>
     <field>
         <id>icapeg.general.LogLevel </id>
-        <label>LogLevel</label>
-        <select multiple="multiple" id="icapeg.general.LogLevel">
-    </select>
+        <label> Log Level </label>
         <type>select_multiple</type>
         <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
     </field>
+
+
+
+    <!-- <field>
+        <id>antivirus.scanfiletypes</id>
+        <label>Scan for filetypes</label>
+        <type>select_multiple</type>
+        <help>Choose for which file types to scan, if unsure select all.</help>
+    </field> -->
     <!--  1 ####################### -->
      <field>
         <id>icapeg.general.WritingLogsToConsole</id>
