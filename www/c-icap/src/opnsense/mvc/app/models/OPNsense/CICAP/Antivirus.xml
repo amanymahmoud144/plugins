@@ -7,7 +7,7 @@
             <default>0</default>
             <Required>Y</Required>
         </enable_clamav>
-        <scanfiletypes type="OptionField">
+        <!-- <scanfiletypes type="OptionField">
             <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE,DEBUG</default>
             <multiple>Y</multiple>
             <Required>Y</Required>
@@ -21,7 +21,7 @@
                     <MSOFFICE>Microsoft office files</MSOFFICE>
                     <DEBUG>DEBUG</DEBUG>
                 </OptionValues>
-        </scanfiletypes>
+        </scanfiletypes> -->
         <sendpercentdata type="IntegerField">
             <default>5</default>
             <Required>Y</Required>
