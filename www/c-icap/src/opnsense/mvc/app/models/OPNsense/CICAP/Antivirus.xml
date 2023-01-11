@@ -8,7 +8,7 @@
             <Required>Y</Required>
         </enable_clamav>
         <scanfiletypes type="OptionField">
-            <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE</default>
+            <default>TEXT,DATA,EXECUTABLE,ARCHIVE,GIF,JPEG,MSOFFICE,DEBUG</default>
             <multiple>Y</multiple>
             <Required>Y</Required>
                 <OptionValues>
@@ -18,7 +18,8 @@
                     <ARCHIVE>Archives</ARCHIVE>
                     <GIF>GIF animations</GIF>
                     <JPEG>JPEG pictures</JPEG>
-                    
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                    <DEBUG>DEBUG</DEBUG>
                 </OptionValues>
         </scanfiletypes>
         <sendpercentdata type="IntegerField">
