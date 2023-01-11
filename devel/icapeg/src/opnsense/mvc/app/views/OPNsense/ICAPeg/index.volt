@@ -26,7 +26,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1>App configuration</h1>
+<h1>App configuration go icap</h1>
 
 <script>
     $( document ).ready(function() {

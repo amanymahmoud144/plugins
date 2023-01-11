@@ -2,6 +2,7 @@
     <mount>//OPNsense/icapeg</mount>
     <description>
         the OPNsense "ICAPeg" application
+        
     </description>
     <items>
         <!-- container -->
