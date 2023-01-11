@@ -7,7 +7,7 @@
         <help>ICAP default port number 1344</help>
     </field>
     <field>
-        <id>icapeg.LogLevel </id>
+        <id>icapeg.general.LogLevel </id>
         <label> Log Level </label>
         <type>select_multiple</type>
         <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
