@@ -2,7 +2,6 @@
     <mount>//OPNsense/icapeg</mount>
     <description>
         the OPNsense "ICAPeg" application
-        
     </description>
     <items>
         <!-- container -->
@@ -14,14 +13,14 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <default>Debug,Info,Error,Fatal</default>
+                <default>DEBUG,INFO,ERROR,FATAL</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <Debug>Debug</Debug>
-                        <Info>Info</Info>
-                        <Error>Error</Error>
-                        <Fatal>Fatal</Fatal>
+                        <DEBUG>Debug</DEBUG>
+                        <INFO>Info</INFO>
+                        <ERROR>Error</ERROR>
+                        <FATAL>Fatal</FATAL>
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">

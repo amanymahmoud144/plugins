@@ -19,6 +19,7 @@
                     <GIF>GIF animations</GIF>
                     <JPEG>JPEG pictures</JPEG>
                     <MSOFFICE>Microsoft office files</MSOFFICE>
+                    <DEBUG>Debug</DEBUG>
                 </OptionValues>
         </scanfiletypes>
         <sendpercentdata type="IntegerField">
