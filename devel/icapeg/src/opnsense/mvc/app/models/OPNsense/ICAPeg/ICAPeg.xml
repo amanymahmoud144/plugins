@@ -1,4 +1,4 @@
- <model>
+<model>
     <mount>//OPNsense/icapeg</mount>
     <description>
         the OPNsense "ICAPeg" application
@@ -13,16 +13,17 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                 <default>DEBUG,INFO,ERROR,FATAL</default>
+                <default>DEBUG,INFO,ERROR,FATAL</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <DEBUG>Debug</DEBUG>
-                        <INFO>Info</INFO>
-                        <ERROR>Error</ERROR>
-                        <FATAL>Fatal</FATAL> 
-                    </OptionValues>
+                <OptionValues>
+                    <DEBUG>Debug</DEBUG>
+                    <INFO>Info</INFO>
+                    <ERROR>Error</ERROR>
+                    <FATAL>Fatal</FATAL>
+                </OptionValues>
             </LogLevel>
+
             <WritingLogsToConsole type="BooleanField">
                 <default>0</default>
                 <Required>Y</Required>
@@ -33,7 +34,7 @@
             </DebuggingHeaders>
 
 
-             <echoHeader type="BooleanField">
+            <echoHeader type="BooleanField">
                 <default>1</default>
                 <Required>Y</Required>
             </echoHeader>
@@ -49,36 +50,35 @@
                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TXT>txt</TXT>
-                        <PDF>pdf</PDF>
-                        <EXE>exe</EXE>
-                        <ZIP>zip</ZIP>
-                        <DOCX>docx</DOCX>
-                        <DOC>doc</DOC>
-
-                    </OptionValues>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
             </echo_process_extensions>
 
             <echo_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </echo_reject_extensions>
             <echo_bypass_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </echo_bypass_extensions>
             <echo_shadow_service type="BooleanField">
                 <default>0</default>
@@ -123,31 +123,31 @@
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clamav_process_extensions>
             <clamav_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clamav_reject_extensions>
             <clamav_bypass_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clamav_bypass_extensions>
             <clamav_timeout type="NumericField">
                 <default>10</default>
@@ -197,32 +197,32 @@
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </grayimages_process_extensions>
             <grayimages_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </grayimages_reject_extensions>
             <grayimages_bypass_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </grayimages_bypass_extensions>
             <grayimages_timeout type="NumericField">
                 <default>10</default>
@@ -260,7 +260,7 @@
                 <default>0</default>
                 <Required>N</Required>
             </grayimages_return_original_if_max_file_size_exceeded>
-    
+
 
 
 
@@ -280,31 +280,31 @@
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </virustotal_process_extensions>
             <virustotal_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </virustotal_reject_extensions>
             <virustotal_bypass_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </virustotal_bypass_extensions>
             <virustotal_timeout type="NumericField">
                 <default>1000</default>
@@ -368,31 +368,31 @@
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clhashlookup_process_extensions>
             <clhashlookup_reject_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clhashlookup_reject_extensions>
             <clhashlookup_bypass_extensions type="OptionField">
                 <default>txt,pdf,exe,zip,docx,doc</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
-                    <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                <OptionValues>
+                    <TEXT>Text files</TEXT>
+                    <EXECUTABLE>Executables</EXECUTABLE>
+                    <MSOFFICE>Microsoft office files</MSOFFICE>
+                </OptionValues>
             </clhashlookup_bypass_extensions>
             <clhashlookup_timeout type="NumericField">
                 <default>1000</default>
@@ -451,7 +451,7 @@
                 <Required>Y</Required>
             </clhashlookup_exception_page>
 
-         </general>
+        </general>
     </items>
 
 </model>
