@@ -46,16 +46,16 @@
                 <Required>Y</Required>
             </echo_resp_mode>
             <echo_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <txt>txt</txt>
-                        <pdf>pdf</pdf>
-                        <exe>exe</exe>
-                        <zip>zip</zip>
-                        <docx>docx</docx>
-                        <doc>doc</doc>
+                        <TXT>txt</TXT>
+                        <PDF>pdf</PDF>
+                        <EXE>exe</EXE>
+                        <ZIP>zip</ZIP>
+                        <DOCX>docx</DOCX>
+                        <DOC>doc</DOC>
 
                     </OptionValues>
             </echo_process_extensions>
