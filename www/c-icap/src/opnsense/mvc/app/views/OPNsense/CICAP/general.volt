@@ -57,6 +57,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <script>
     $( document ).ready(function() {
         var data_get_map = {'frm_general_settings':"/api/cicap/general/get"};
+        /*
         mapDataToFormUI(data_get_map).done(function(data){
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
@@ -65,7 +66,7 @@ POSSIBILITY OF SUCH DAMAGE.
         mapDataToFormUI(data_get_map2).done(function(data){
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
-        });
+        });*/
         ajaxCall(url="/api/cicap/service/status", sendData={}, callback=function(data,status) {
             updateServiceStatusUI(data['status']);
         });
