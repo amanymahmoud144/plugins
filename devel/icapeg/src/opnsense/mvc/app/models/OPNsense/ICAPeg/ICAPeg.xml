@@ -13,14 +13,14 @@
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <default>DEBUG,INFO,ERROR,FATAL</default>
+                <default>debug</default>
                 <multiple>Y</multiple>
-                <Required>Y</Required>
+                <Required>N</Required>
                 <OptionValues>
-                    <DEBUG>debug</DEBUG>
-                    <INFO>info</INFO>
-                    <ERROR>error</ERROR>
-                    <FATAL>fatal</FATAL>
+                    <DEBUG value='debug'>debug</DEBUG>
+                    <INFO value='info'>info</INFO>
+                    <ERROR value='error'>error</ERROR>
+                    <FATAL value='fatal'>fatal</FATAL>
                 </OptionValues>
             </LogLevel>
 
