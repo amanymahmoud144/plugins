@@ -17,10 +17,10 @@
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
-                    <DEBUG>Debug</DEBUG>
-                    <INFO>Info</INFO>
-                    <ERROR>Error</ERROR>
-                    <FATAL>Fatal</FATAL>
+                    <DEBUG>debug</DEBUG>
+                    <INFO>info</INFO>
+                    <ERROR>error</ERROR>
+                    <FATAL>fatal</FATAL>
                 </OptionValues>
             </LogLevel>
 
