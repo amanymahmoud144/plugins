@@ -34,6 +34,6 @@ class GeneralController extends \OPNsense\Base\IndexController
     {
         $this->view->generalForm = $this->getForm("general");
         // $this->view->antivirusForm = $this->getForm("antivirus");
-        $this->view->pick('OPNsense/ICAPeg/general');
+        $this->view->pick('OPNsense/ICAPeg/index');
     }
 }
