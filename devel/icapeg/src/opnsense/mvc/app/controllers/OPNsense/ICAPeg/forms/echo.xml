@@ -1,4 +1,9 @@
 <form>
+<field>
+        <id>icapeg.general.echoHeader</id>
+        <label>Echo services</label>
+        <type>header</type>
+    </field>
  <!-- echo 1 ####################### -->
     <field>
         <id>icapeg.general.echo_req_mode</id>
