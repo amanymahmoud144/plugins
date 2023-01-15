@@ -51,19 +51,16 @@
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
-                    <TXT>"txt"</TXT>
-                    <PDF>"pdf"</PDF>
-                    <EXE>"exe"</EXE>
-                    <ZIP>"zip"</ZIP>
-                    <DOCX>"docx"</DOCX>
-                    <DOC>"doc"</DOC>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
                 </OptionValues>
             </echo_process_extensions>
 
             <echo_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
                  <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
@@ -77,10 +74,7 @@
                 </OptionValues>
             </echo_reject_extensions>
             <echo_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -132,10 +126,7 @@
                 <Required>Y</Required>
             </clamav_resp_mode>
             <clamav_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -148,10 +139,7 @@
                 </OptionValues>
             </clamav_process_extensions>
             <clamav_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -164,10 +152,7 @@
                 </OptionValues>
             </clamav_reject_extensions>
             <clamav_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -224,10 +209,7 @@
                 <Required>Y</Required>
             </grayimages_resp_mode>
             <grayimages_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -240,10 +222,7 @@
                 </OptionValues>
             </grayimages_process_extensions>
             <grayimages_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -256,10 +235,7 @@
                 </OptionValues>
             </grayimages_reject_extensions>
             <grayimages_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -324,10 +300,7 @@
                 <Required>Y</Required>
             </virustotal_resp_mode>
             <virustotal_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -340,10 +313,7 @@
                 </OptionValues>
             </virustotal_process_extensions>
             <virustotal_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -356,10 +326,7 @@
                 </OptionValues>
             </virustotal_reject_extensions>
             <virustotal_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -430,10 +397,7 @@
                 <Required>Y</Required>
             </clhashlookup_resp_mode>
             <clhashlookup_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -446,10 +410,7 @@
                 </OptionValues>
             </clhashlookup_process_extensions>
             <clhashlookup_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                 <OptionValues>
@@ -462,9 +423,6 @@
                 </OptionValues>
             </clhashlookup_reject_extensions>
             <clhashlookup_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
