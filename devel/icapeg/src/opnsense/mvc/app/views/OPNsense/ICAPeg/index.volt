@@ -36,10 +36,6 @@ POSSIBILITY OF SUCH DAMAGE.
         <div class="content-box" style="padding-bottom: 1.5em;">
             <h1>ICAPeg General configuration </h1>
             {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_general_settings'])}}
-            <div class="col-md-12">
-                <hr />
-                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
-            </div>
         </div>
     </div>
     <div id="echo" class="tab-pane fade in active">
@@ -57,6 +53,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <script>
     $( document ).ready(function() {
         var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
+        var data_get_map = {'frm_echoSettings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map).done(function(data){
             // place actions to run after load, for example update form styles.
             console.log(data)
