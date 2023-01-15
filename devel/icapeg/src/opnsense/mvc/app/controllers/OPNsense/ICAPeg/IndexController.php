@@ -42,5 +42,7 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->pick('OPNsense/ICAPeg/index');
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
+        // fetch form data "echo" in
+        $this->view->echoForm = $this->getForm("echo");
     }
 }

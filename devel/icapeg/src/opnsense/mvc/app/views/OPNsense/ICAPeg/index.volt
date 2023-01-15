@@ -27,6 +27,30 @@ POSSIBILITY OF SUCH DAMAGE.
 #}
 
 <h1>App configuration go icap</h1>
+<ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
+    <li class="active"><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
+    <li><a data-toggle="tab" href="#echo">{{ lang._('Echo') }}</a></li>
+</ul>
+<div class="tab-content content-box tab-content">
+    <div id="general" class="tab-pane fade in active">
+        <div class="content-box" style="padding-bottom: 1.5em;">
+            {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_general_settings'])}}
+            <div class="col-md-12">
+                <hr />
+                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="echo" class="tab-pane fade in">
+        <div class="content-box" style="padding-bottom: 1.5em;">
+            {{ partial("layout_partials/base_form",['fields':antivirusForm,'id':'frm_echo_settings'])}}
+            <div class="col-md-12">
+                <hr />
+                <button class="btn btn-primary"  id="saveAct2" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct2_progress"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $( document ).ready(function() {
