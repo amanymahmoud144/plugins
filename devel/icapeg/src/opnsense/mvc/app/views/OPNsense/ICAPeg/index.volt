@@ -43,11 +43,7 @@ POSSIBILITY OF SUCH DAMAGE.
     </div>
     <div id="echo" class="tab-pane fade in">
         <div class="content-box" style="padding-bottom: 1.5em;">
-            {{ partial("layout_partials/base_form",['fields':antivirusForm,'id':'frm_echo_settings'])}}
-            <div class="col-md-12">
-                <hr />
-                <button class="btn btn-primary"  id="saveAct2" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct2_progress"></i></button>
-            </div>
+            {{ partial("layout_partials/base_form",['fields':echoForm,'id':'frm_echo_settings'])}}
         </div>
     </div>
 </div>
@@ -61,6 +57,7 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
+        
 
         // link save button to API set action
         $("#saveAct").click(function(){
