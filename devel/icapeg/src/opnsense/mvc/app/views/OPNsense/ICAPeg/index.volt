@@ -26,10 +26,11 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1>App configuration go icap</h1>
+
 <ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
     <li class="active"><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
-    <li><a data-toggle="tab" href="#echo">{{ lang._('Echo') }}</a></li>
+    <li><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
+    <h1>App configuration go icap</h1>
 </ul>
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
