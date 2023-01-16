@@ -35,22 +35,21 @@ POSSIBILITY OF SUCH DAMAGE.
         <div class="content-box" style="padding-bottom: 1.5em;">
             <h1>ICAPeg General configuration </h1>
             {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_general_settings'])}}
-           <!--  <div class="col-md-12">
+           <div class="col-md-12">
                 <hr />
                 <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
-            </div> -->
+            </div> 
         </div>
     </div>
-    
-</div>
-<div id="echo" class="tab-pane fade in active">
-    <div class="content-box" style="padding-bottom: 1.5em;">
-        <h1>Echo Service Configuration </h1>
-        {{ partial("layout_partials/base_form",['fields':echoForm,'id':'frm_echo_settings'])}}
-        <!-- <div class="col-md-12">
-            <hr />
-            <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
-        </div> -->
+    <div id="echo" class="tab-pane fade in active">
+        <div class="content-box" style="padding-bottom: 1.5em;">
+            <h1>Echo Service Configuration </h1>
+            {{ partial("layout_partials/base_form",['fields':echoForm,'id':'frm_echo_settings'])}}
+            <div class="col-md-12">
+                <hr />
+                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
+            </div>
+        </div>
     </div>
 </div>
 
