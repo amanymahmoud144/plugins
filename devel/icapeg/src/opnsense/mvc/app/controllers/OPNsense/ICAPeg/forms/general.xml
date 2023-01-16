@@ -12,5 +12,19 @@
         <type>dropdown</type>
         <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
     </field>
+    <field>
+        <id>icapeg.general.WritingLogsToConsole</id>
+        <label>Writing logs to console</label>
+        <type>checkbox</type>
+        <help>Writing logs on the ICAPeg console</help>
+    </field>
+    <!-- ##################### -->
+    <!-- 2 ####################### -->
+    <field>
+        <id>icapeg.general.DebuggingHeaders</id>
+        <label>Debugging headers</label>
+        <type>checkbox</type>
+        <help>Enable this feature if you want to add debugging headers to ICAP response ex: X-ICAPeg-Shadow-Service </help>
+    </field>
 
 </form>
