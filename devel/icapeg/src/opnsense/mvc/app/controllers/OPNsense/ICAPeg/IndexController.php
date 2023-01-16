@@ -40,7 +40,7 @@ class IndexController extends \OPNsense\Base\IndexController
     {
        
         // fetch form data "general" in
-        //$this->view->generalForm = $this->getForm("general");
+        $this->view->generalForm = $this->getForm("general");
         // fetch form data "echo" in
         $this->view->echoForm = $this->getForm("echo");
          // pick the template to serve to our users.

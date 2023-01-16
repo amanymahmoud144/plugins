@@ -68,9 +68,7 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        ajaxCall(url="/api/icapeg/service/status", sendData={}, callback=function(data,status) {
-            updateServiceStatusUI(data['status']);
-        });
+       
 
         // link save button to API set action
         $("#saveAct").click(function(){
