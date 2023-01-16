@@ -44,7 +44,7 @@ class IndexController extends \OPNsense\Base\IndexController
         // fetch form data "echo" in
         $this->view->echoForm = $this->getForm("echo");
          // pick the template to serve to our users.
-         $this->view->pick('OPNsense/ICAPeg/general');
+         $this->view->pick('OPNsense/ICAPeg/index');
     }
     
 }
