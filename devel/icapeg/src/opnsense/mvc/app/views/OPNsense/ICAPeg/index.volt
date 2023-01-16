@@ -29,6 +29,8 @@ POSSIBILITY OF SUCH DAMAGE.
 <ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
     <li class="active"><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
     <li><a data-toggle="tab" href="#echo">{{ lang._('Echo') }}</a></li>
+    <li><a data-toggle="tab" href="#clamav">{{ lang._('Clamav') }}</a></li>
+    <li><a data-toggle="tab" href="#clhashlookup">{{ lang._('Clhashlookup') }}</a></li>
 </ul>
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
@@ -51,6 +53,26 @@ POSSIBILITY OF SUCH DAMAGE.
             </div>
         </div>
     </div>
+    <div id="clamav" class="tab-pane fade in active">
+        <div class="content-box" style="padding-bottom: 1.5em;">
+            <h1>Clamav Service Configuration </h1>
+            {{ partial("layout_partials/base_form",['fields':clamavForm,'id':'frm_clamav_settings'])}}
+            <div class="col-md-12">
+                <hr />
+                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="clhashlookup" class="tab-pane fade in active">
+        <div class="content-box" style="padding-bottom: 1.5em;">
+            <h1>Clhashlookup Service Configuration </h1>
+            {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_clhashlookup_settings'])}}
+            <div class="col-md-12">
+                <hr />
+                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -63,6 +85,18 @@ POSSIBILITY OF SUCH DAMAGE.
             $('.selectpicker').selectpicker('refresh');
         });
         var data_get_map2 = {'frm_echo_settings':"/api/icapeg/settings/get"};
+        mapDataToFormUI(data_get_map2).done(function(data){
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
+        });
+        var data_get_map3 = {'frm_clamav_settings':"/api/icapeg/settings/get"};
+        mapDataToFormUI(data_get_map2).done(function(data){
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
+        });
+        var data_get_map2 = {'frm_clhashlookup_settings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map2).done(function(data){
             console.log(data)
             formatTokenizersUI();
