@@ -32,6 +32,6 @@ namespace OPNsense\ICAPeg;
 
 use OPNsense\Base\BaseModel;
 
-class General extends BaseModel
+class ICAPeg extends BaseModel
 {
 }
