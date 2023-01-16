@@ -91,13 +91,13 @@ POSSIBILITY OF SUCH DAMAGE.
             $('.selectpicker').selectpicker('refresh');
         });
         var data_get_map3 = {'frm_clamav_settings':"/api/icapeg/settings/get"};
-        mapDataToFormUI(data_get_map2).done(function(data){
+        mapDataToFormUI(data_get_map3).done(function(data){
             console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_clhashlookup_settings':"/api/icapeg/settings/get"};
-        mapDataToFormUI(data_get_map2).done(function(data){
+        var data_get_map4 = {'frm_clhashlookup_settings':"/api/icapeg/settings/get"};
+        mapDataToFormUI(data_get_map4).done(function(data){
             console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
