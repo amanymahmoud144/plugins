@@ -62,7 +62,7 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_echo_settings':"/api/icapeg/settings/get"};
+        var data_get_map2 = {'frm_EchoSettings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map2).done(function(data){
             console.log(data)
             formatTokenizersUI();
@@ -80,6 +80,16 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
             });
         });
+        $("#saveAct2").click(function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_EchoSettings',callback_ok=function(){
+                // action to run after successful save, for example reconfigure service.
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
+                    // action to run after reload
+                    $("#responseMsg").html(data['status']);
+                });
+            });
+        });
+        
 
     });
 </script>
