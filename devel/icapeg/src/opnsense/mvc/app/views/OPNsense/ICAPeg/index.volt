@@ -43,7 +43,7 @@ POSSIBILITY OF SUCH DAMAGE.
     </div>
     <div id="echo" class="tab-pane fade in active">
         <div class="content-box" style="padding-bottom: 1.5em;">
-            <h1>Echo Service configuration </h1>
+            <h1>Echo Service Configuration </h1>
             {{ partial("layout_partials/base_form",['fields':echoForm,'id':'frm_echo_settings'])}}
             <div class="col-md-12">
                 <hr />
