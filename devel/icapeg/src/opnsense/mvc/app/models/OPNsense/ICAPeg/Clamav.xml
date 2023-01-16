@@ -1,0 +1,93 @@
+<model>
+    <mount>//OPNsense/icapeg</mount>
+    <description>
+        the OPNsense "ICAPeg" application
+    </description>
+    <items>
+        <!-- container -->
+        <clamav>
+            <!-- fields -->
+            <clamavHeader type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clamavHeader>
+            <clamav_req_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clamav_req_mode>
+            <clamav_resp_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clamav_resp_mode>
+            <clamav_process_extensions type="OptionField">
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </clamav_process_extensions>
+            <clamav_reject_extensions type="OptionField">
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </clamav_reject_extensions>
+            <clamav_bypass_extensions type="OptionField">
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </clamav_bypass_extensions>
+            <clamav_timeout type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </clamav_timeout>
+            <clamav_shadow_service type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clamav_shadow_service>
+            <clamav_preview_bytes type="NumericField">
+                <default>1024</default>
+                <Required>N</Required>
+            </clamav_preview_bytes>
+            <clamav_preview_enabled type="BooleanField">
+                <default>1</default>
+                <Required>N</Required>
+            </clamav_preview_enabled>
+            <clamav_max_filesize type="NumericField">
+                <default>0</default>
+                <Required>N</Required>
+            </clamav_max_filesize>
+            <clamav_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clamav_return_original_if_max_file_size_exceeded>
+            <clamav_return_400_if_file_ext_rejected type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clamav_return_400_if_file_ext_rejected>
+
+        </clamav>
+    </items>
+
+</model>
