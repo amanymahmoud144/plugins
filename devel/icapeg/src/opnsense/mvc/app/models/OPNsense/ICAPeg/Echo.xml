@@ -1,0 +1,89 @@
+<model>
+    <mount>//OPNsense/icapeg</mount>
+    <description>
+        the OPNsense "ICAPeg" application
+    </description>
+    <items>
+        <!-- container -->
+        <echo>
+            <!-- fields -->
+            <echoHeader type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </echoHeader>
+            <echo_req_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </echo_req_mode>
+            <echo_resp_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </echo_resp_mode>
+            <echo_process_extensions type="OptionField">
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </echo_process_extensions>
+
+            <echo_reject_extensions type="OptionField">
+                 <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </echo_reject_extensions>
+            <echo_bypass_extensions type="OptionField">
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                <OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
+            </echo_bypass_extensions>
+            <echo_shadow_service type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </echo_shadow_service>
+            <echo_preview_bytes type="NumericField">
+                <default>1024</default>
+                <Required>N</Required>
+            </echo_preview_bytes>
+            <echo_preview_enabled type="BooleanField">
+                <default>1</default>
+                <Required>N</Required>
+            </echo_preview_enabled>
+            <echo_max_filesize type="NumericField">
+                <default>0</default>
+                <Required>N</Required>
+            </echo_max_filesize>
+            <echo_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </echo_return_original_if_max_file_size_exceeded>
+            <echo_return_400_if_file_ext_rejected type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </echo_return_400_if_file_ext_rejected>
+        </echo>
+    </items>
+
+</model>
