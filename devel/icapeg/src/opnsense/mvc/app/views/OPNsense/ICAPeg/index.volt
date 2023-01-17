@@ -154,7 +154,7 @@ POSSIBILITY OF SUCH DAMAGE.
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
 </div> -->
 
-<div class="col-md-12">
+<!-- <div class="col-md-12">
     
     <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b></button>
-</div>
+</div> -->
