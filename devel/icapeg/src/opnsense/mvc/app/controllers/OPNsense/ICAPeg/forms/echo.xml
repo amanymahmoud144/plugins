@@ -1,6 +1,6 @@
 <form>
 <field>
-        <id>icapeg.echo.echoHeader</id>
+        <id>echo.echoHeader</id>
         <label>Echo services</label>
         <type>header</type>
     </field>
