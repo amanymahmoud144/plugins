@@ -85,7 +85,7 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_echo_settings':"/api/icapeg/settings/get"};
+        var data_get_map2 = {'frm_echo_settings':"/api/icapeg/echo/get"};
         mapDataToFormUI(data_get_map2).done(function(data){
             console.log(data)
             formatTokenizersUI();
