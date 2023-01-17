@@ -26,7 +26,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-/* namespace OPNsense\ICAPeg\Api;
+namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
 
@@ -35,4 +35,4 @@ class GeneralController extends BaseModel
     protected static $internalModelClass = '\OPNsense\CICAP\General';
     protected static $internalModelName = 'general';
 }
- */
+ 
