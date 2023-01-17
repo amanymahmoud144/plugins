@@ -5,7 +5,6 @@
     </description>
     <items>
         <!-- container -->
-        <echo>
             <!-- fields -->
             <echoHeader type="BooleanField">
                 <default>1</default>
@@ -83,7 +82,6 @@
                 <default>0</default>
                 <Required>N</Required>
             </echo_return_400_if_file_ext_rejected>
-        </echo>
     </items>
 
 </model>
