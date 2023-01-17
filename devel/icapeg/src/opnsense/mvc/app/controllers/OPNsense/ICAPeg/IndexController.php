@@ -30,9 +30,10 @@
 
 namespace OPNsense\ICAPeg;
 
-
- @package OPNsense\ICAPeg
- 
+/**
+ * Class IndexController
+ * @package OPNsense\ICAPeg
+ */
 class IndexController extends \OPNsense\Base\IndexController
 {
     public function indexAction()
@@ -48,7 +49,6 @@ class IndexController extends \OPNsense\Base\IndexController
         $this->view->clhashlookupForm = $this->getForm("clhashlookup");
          // pick the template to serve to our users.
          $this->view->pick('OPNsense/ICAPeg/index');
-
     }
     
 }
