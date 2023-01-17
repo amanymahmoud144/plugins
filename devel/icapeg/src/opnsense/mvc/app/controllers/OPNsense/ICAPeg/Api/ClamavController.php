@@ -29,7 +29,7 @@
 namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
-//use OPNsense\Base\BaseModel;
+use OPNsense\Base\BaseModel;
 
 class ClamavController extends ApiMutableModelControllerBase
 {
