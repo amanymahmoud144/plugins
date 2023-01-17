@@ -26,13 +26,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace OPNsense\ICAPeg\Api;
+/* namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
-use OPNsense\Base\BaseModel;
 
 class GeneralController extends ApiMutableModelControllerBase
 {
     protected static $internalModelClass = '\OPNsense\ICAPeg\General';
     protected static $internalModelName = 'general';
 }
+ */
