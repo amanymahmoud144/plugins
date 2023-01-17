@@ -31,7 +31,7 @@
 namespace OPNsense\ICAPeg;
 
 
- //@package OPNsense\ICAPeg
+ @package OPNsense\ICAPeg
  
 class IndexController extends \OPNsense\Base\IndexController
 {
