@@ -123,6 +123,24 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
             });
         });
+        $("#saveAct3").click(function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClamavSettings',callback_ok=function(){
+                // action to run after successful save, for example reconfigure service.
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
+                    // action to run after reload
+                    $("#responseMsg").html(data['status']);
+                });
+            });
+        });
+        $("#saveAct4").click(function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClhashlookupSettings',callback_ok=function(){
+                // action to run after successful save, for example reconfigure service.
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
+                    // action to run after reload
+                    $("#responseMsg").html(data['status']);
+                });
+            });
+        });
         
 
     });
@@ -132,9 +150,9 @@ POSSIBILITY OF SUCH DAMAGE.
 
 </div>
 
-<div  class="col-md-12">
+<!-- <div  class="col-md-12">
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
-</div>
+</div> -->
 
 <div class="col-md-12">
     

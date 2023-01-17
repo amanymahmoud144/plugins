@@ -1,6 +1,5 @@
 <form>
     <!-- ######################### clhashlookup####################### -->
-
     <field>
         <id>icapeg.clhashlookup.clhashlookupHeader</id>
         <label>clhashlookup services</label>

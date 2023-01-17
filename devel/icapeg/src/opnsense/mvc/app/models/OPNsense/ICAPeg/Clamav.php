@@ -32,6 +32,6 @@ namespace OPNsense\ICAPeg;
 
 use OPNsense\Base\BaseModel;
 
-class clamav extends BaseModel
+class Clamav extends BaseModel
 {
 }
