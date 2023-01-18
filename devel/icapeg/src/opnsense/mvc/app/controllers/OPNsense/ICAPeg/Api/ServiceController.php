@@ -29,19 +29,21 @@
  */
 
 namespace OPNsense\ICAPeg\Api;
-
-use OPNsense\Base\ApiControllerBase;
+use OPNsense\Base\ApiMutableServiceControllerBase;
 use OPNsense\Core\Backend;
+use OPNsense\ICAPeg\General;
 
 /**
  * Class ServiceController
- * @package OPNsense\Cron
+ * @package OPNsense\ICAPeg
  */
-class ServiceController extends ApiControllerBase
+class ServiceController extends ApiMutableServiceControllerBase
 {
-    /**
-     * reconfigure icapeg
-     */
+    protected static $internalServiceClass = '\OPNsense\ICAPeg\General';
+    protected static $internalServiceTemplate = 'OPNsense/ICAPeg';
+    protected static $internalServiceEnabled = 'enabled';
+    protected static $internalServiceName = 'icapeg';
+
     public function reloadAction()
     {
 

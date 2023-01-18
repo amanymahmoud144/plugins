@@ -1,11 +1,8 @@
 <model>
     <mount>//OPNsense/icapeg/clhashlookup</mount>
     <description>
-        the OPNsense "ICAPeg" application
-    </description>
+        the OPNsense "ICAPeg" application </description>
     <items>
-        <!-- container -->
-        <clhashlookup>
             <!-- fields -->
             <clhashlookupHeader type="BooleanField">
                 <default>1</default>
@@ -114,8 +111,6 @@
                 <default>"./temp/exception-page.html"</default>
                 <Required>Y</Required>
             </clhashlookup_exception_page>
-
-        </clhashlookup>
     </items>
 
 </model>

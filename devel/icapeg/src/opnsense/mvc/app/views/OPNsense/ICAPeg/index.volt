@@ -78,26 +78,26 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <script>
     $( document ).ready(function() {
-        var data_get_map = {'frm_general_settings':"/api/icapeg/settings/get"};
+        var data_get_map = {'frm_general_settings':"/api/icapeg/general/get"};
         mapDataToFormUI(data_get_map).done(function(data){
             // place actions to run after load, for example update form styles.
             console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_echo_settings':"/api/echo/settings/get"};
+        var data_get_map2 = {'frm_echo_settings':"/api/icapeg/echo/get"};
         mapDataToFormUI(data_get_map2).done(function(data){
             console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map3 = {'frm_clamav_settings':"/api/icapeg/settings/get"};
+        var data_get_map3 = {'frm_clamav_settings':"/api/icapeg/clamav/get"};
         mapDataToFormUI(data_get_map3).done(function(data){
             console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map4 = {'frm_clhashlookup_settings':"/api/icapeg/settings/get"};
+        var data_get_map4 = {'frm_clhashlookup_settings':"/api/icapeg/clhashlookup/get"};
         mapDataToFormUI(data_get_map4).done(function(data){
             console.log(data)
             formatTokenizersUI();
@@ -107,7 +107,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
         // link save button to API set action
         $("#saveAct").click(function(){
-            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
+            saveFormToEndpoint(url="/api/icapeg/general/set",formid='frm_GeneralSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
@@ -116,7 +116,7 @@ POSSIBILITY OF SUCH DAMAGE.
             });
         });
         $("#saveAct2").click(function(){
-            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_EchoSettings',callback_ok=function(){
+            saveFormToEndpoint(url="/api/icapeg/echo/set",formid='frm_EchoSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
@@ -125,7 +125,7 @@ POSSIBILITY OF SUCH DAMAGE.
             });
         });
         $("#saveAct3").click(function(){
-            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClamavSettings',callback_ok=function(){
+            saveFormToEndpoint(url="/api/icapeg/clamav/set",formid='frm_ClamavSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
@@ -134,7 +134,7 @@ POSSIBILITY OF SUCH DAMAGE.
             });
         });
         $("#saveAct4").click(function(){
-            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClhashlookupSettings',callback_ok=function(){
+            saveFormToEndpoint(url="/api/icapeg/clhashlookup/set",formid='frm_ClhashlookupSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
@@ -147,10 +147,10 @@ POSSIBILITY OF SUCH DAMAGE.
     });
 </script>
 
-<div class="alert alert-info hidden" role="alert" id="responseMsg">
+<!-- <div class="alert alert-info hidden" role="alert" id="responseMsg">
 
 </div>
-
+ -->
 <!-- <div  class="col-md-12">
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
 </div> -->

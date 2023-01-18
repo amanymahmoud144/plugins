@@ -29,6 +29,7 @@
 namespace OPNsense\ICAPeg\Api;
 
 use OPNsense\Base\ApiMutableModelControllerBase;
+
 class ClhashlookupController extends ApiMutableModelControllerBase
 {
     protected static $internalModelClass = '\OPNsense\ICAPeg\Clhashlookup';
