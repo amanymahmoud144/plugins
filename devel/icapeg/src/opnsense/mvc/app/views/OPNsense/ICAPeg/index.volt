@@ -56,7 +56,7 @@ POSSIBILITY OF SUCH DAMAGE.
     
     <div id="clamav" class="tab-pane fade in active">
         <div class="content-box" style="padding-bottom: 1.5em;">
-            <h1>Clamav Service Configuration </h1>
+            <h1>Clamav - Service Configuration </h1>
             {{ partial("layout_partials/base_form",['fields':clamavForm,'id':'frm_clamav_settings'])}}
             <div class="col-md-12">
                 <hr />
