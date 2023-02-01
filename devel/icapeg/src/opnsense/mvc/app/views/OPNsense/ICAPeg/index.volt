@@ -33,26 +33,12 @@ POSSIBILITY OF SUCH DAMAGE.
 </ul>
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
-        <div class="content-box" style="padding-bottom: 1.5em;">
-            <h1>ICAPeg General configuration </h1>
-            {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_general_settings'])}}
-           <div class="col-md-12">
-                <hr />
-                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
-            </div> 
-        </div>
     </div>
     <div id="clhashlookup" class="tab-pane">
-        <div class="content-box" style="padding-bottom: 1.5em;">
-            <h1>Clhashlookup Service Configuration </h1>
-            {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_clhashlookup_settings'])}}
-            <div class="col-md-12">
-                <hr />
-                <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b> <i id="saveAct_progress"></i></button>
-            </div>
         </div>
     </div>
 </div>
+
 <script>
     $( document ).ready(function() {
         var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
@@ -62,13 +48,7 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_ClhashlookupSettings':"/api/icapeg/clhsettings/get"};
-        mapDataToFormUI(data_get_map2).done(function(data){
-            // place actions to run after load, for example update form styles.
-            console.log(data)
-            formatTokenizersUI();
-            $('.selectpicker').selectpicker('refresh');
-        });
+        
 
         // link save button to API set action
         $("#saveAct").click(function(){
