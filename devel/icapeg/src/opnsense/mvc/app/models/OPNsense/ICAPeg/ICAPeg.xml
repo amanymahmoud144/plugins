@@ -8,19 +8,19 @@
         <general>
             <!-- fields -->
             <PortNum type="PortField">
-                <default>  1344</default>
+                <default>1344</default>
                 <ValidationMessage>Error Port value</ValidationMessage>
                 <Required>Y</Required>
             </PortNum>
             <LogLevel type="OptionField">
-                <default>DEBUG,INFO,ERROR,FATAL</default>
+                <default>debug,info,error,fatal</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <DEBUG value='debug'>Debug</DEBUG>
-                        <INFO>"Info"</INFO>
-                        <ERROR>"Error"</ERROR>
-                        <FATAL>"Fatal"</FATAL>
+                        <debug value='debug'>Debug</debug>
+                        <info value='debug'>Info</info>
+                        <error value='error'>"Error"</error>
+                        <fatal value='fatal'>"Fatal"</fatal>
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
