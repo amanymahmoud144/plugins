@@ -34,7 +34,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
     </div>
-    <div id="clhashlookup" class="tab-pane ">
+    <div id="clhashlookup" class="tab-pane">
         </div>
     </div>
 </div>
@@ -48,27 +48,10 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map2 = {'frm_ClhashlookupSettings':"/api/icapeg/clsettings/get"};
-        mapDataToFormUI(data_get_map).done(function(data){
-            // place actions to run after load, for example update form styles.
-            console.log(data)
-            formatTokenizersUI();
-            $('.selectpicker').selectpicker('refresh');
-        });
 
         // link save button to API set action
         $("#saveAct").click(function(){
             saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
-                // action to run after successful save, for example reconfigure service.
-                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
-                    // action to run after reload
-                    $("#responseMsg").html(data['status']);
-                });
-                
-            });
-        });
-        $("#saveAct").click(function(){
-            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClhashlookupsSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
                     // action to run after reload
@@ -89,8 +72,6 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <div  class="col-md-12">
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
-    {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
-
 </div>
 
 <div class="col-md-12">
