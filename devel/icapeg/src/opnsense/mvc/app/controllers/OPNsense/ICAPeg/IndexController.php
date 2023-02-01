@@ -41,7 +41,6 @@ class IndexController extends \OPNsense\Base\IndexController
         
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
-        $this->view->clhashlookupForm = $this->getForm("clhashlookup");
         // pick the template to serve to our users.
         $this->view->pick('OPNsense/ICAPeg/index');
     }
