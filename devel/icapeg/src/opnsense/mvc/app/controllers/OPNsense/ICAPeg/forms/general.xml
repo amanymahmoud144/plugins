@@ -32,7 +32,7 @@
 <!-- ######################### clhashlookup####################### -->
 
 <field>
-                <id>icapeg.general.clhashlookupHeader</id>
+                <id>icapeg.clhashlookup.clhashlookupHeader</id>
                 <label>clhashlookup services</label>
                 <type>header</type>
                 </field>
