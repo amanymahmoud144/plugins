@@ -34,7 +34,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
     </div>
-    <div id="clhashlookup" class="tab-pane">
+    <div id="clhashlookup" class="tab-pane fade in">
         </div>
     </div>
 </div>
@@ -44,10 +44,10 @@ POSSIBILITY OF SUCH DAMAGE.
         var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map).done(function(data){
             // place actions to run after load, for example update form styles.
+            console.log(data)
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        
 
         // link save button to API set action
         $("#saveAct").click(function(){
@@ -57,13 +57,10 @@ POSSIBILITY OF SUCH DAMAGE.
                     // action to run after reload
                     $("#responseMsg").html(data['status']);
                 });
-                
             });
         });
 
-
     });
-    
 </script>
 
 <div class="alert alert-info hidden" role="alert" id="responseMsg">
