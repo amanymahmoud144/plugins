@@ -1,5 +1,5 @@
  <model>
-    <mount>//OPNsense/icapeg</mount>
+    <mount>//OPNsense/clhashlookup</mount>
     <description>
         the OPNsense "ICAPeg" application
     </description>
