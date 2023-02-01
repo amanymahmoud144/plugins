@@ -89,6 +89,8 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <div  class="col-md-12">
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
+    {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
+
 </div>
 
 <div class="col-md-12">
