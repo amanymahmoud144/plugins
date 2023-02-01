@@ -9,8 +9,6 @@
     <field>
         <id>icapeg.general.LogLevel </id>
         <label>LogLevel</label>
-        <select multiple="multiple" id="icapeg.general.LogLevel">
-    </select>
         <type>select_multiple</type>
         <help> Choose for which Options: debug, info, error, or fatal if unsure select all.</help>
     </field>
@@ -52,7 +50,7 @@
                 <help>Enable this feature if you want to apply ICAPeg in Request mode </help>
             </field>
             <field>
-        <id>icapeg.general.clhashlookup_process_extensions </id>
+        <id>icapeg.general.clhashlookup_process_extensions</id>
         <label>clhashlookup_process_extensions</label>
         <type>select_multiple</type>
         <help> Choose for which Options. Everything except the ones in bypass, 
