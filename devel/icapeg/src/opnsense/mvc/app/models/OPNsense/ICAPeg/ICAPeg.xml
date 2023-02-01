@@ -32,7 +32,6 @@
                 <Required>Y</Required>
             </DebuggingHeaders>
 
-         </general>
 
             <clhashlookup>
             <clhashlookupHeader type="BooleanField">
@@ -142,7 +141,8 @@
                 <default>"./temp/exception-page.html"</default>
                 <Required>Y</Required>
             </clhashlookup_exception_page>
-</clhashlookup>
+
+         </general>
     </items>
 
 </model>
