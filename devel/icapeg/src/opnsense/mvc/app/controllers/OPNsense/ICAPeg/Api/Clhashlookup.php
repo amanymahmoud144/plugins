@@ -31,6 +31,6 @@ namespace OPNsense\ICAPeg\Api;
 use OPNsense\Base\ApiMutableModelControllerBase;
 class GeneralController extends ApiMutableModelControllerBase
 {
-    protected static $internalModelClass = '\OPNsense\ICAPeg\General';
-    protected static $internalModelName = 'general';
+    protected static $internalModelClass = '\OPNsense\ICAPeg\Clhashlookup';
+    protected static $internalModelName = 'clhashlookup';
 }

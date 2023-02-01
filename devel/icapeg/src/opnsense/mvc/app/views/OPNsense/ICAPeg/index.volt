@@ -48,6 +48,13 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
+        var data_get_map2 = {'frm_ClhashlookupSettings':"/api/icapeg/clsettings/get"};
+        mapDataToFormUI(data_get_map).done(function(data){
+            // place actions to run after load, for example update form styles.
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
+        });
 
         // link save button to API set action
         $("#saveAct").click(function(){
@@ -57,10 +64,23 @@ POSSIBILITY OF SUCH DAMAGE.
                     // action to run after reload
                     $("#responseMsg").html(data['status']);
                 });
+                
+            });
+        });
+        $("#saveAct").click(function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClhashlookupsSettings',callback_ok=function(){
+                // action to run after successful save, for example reconfigure service.
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
+                    // action to run after reload
+                    $("#responseMsg").html(data['status']);
+                });
+                
             });
         });
 
+
     });
+    
 </script>
 
 <div class="alert alert-info hidden" role="alert" id="responseMsg">
