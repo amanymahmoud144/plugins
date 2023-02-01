@@ -18,9 +18,9 @@
                 <Required>Y</Required>
                     <OptionValues>
                         <debug value='debug'>Debug</debug>
-                        <info value='debug'>Info</info>
-                        <error value='error'>"Error"</error>
-                        <fatal value='fatal'>"Fatal"</fatal>
+                        <info value='info'>Info</info>
+                        <error value='error'>Error</error>
+                        <fatal value='fatal'>Fatal</fatal>
                     </OptionValues>
             </LogLevel>
             <WritingLogsToConsole type="BooleanField">
