@@ -62,8 +62,8 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-        var data_get_map = {'frm_ClhashlookupSettings':"/api/icapeg/clhsettings/get"};
-        mapDataToFormUI(data_get_map).done(function(data){
+        var data_get_map2 = {'frm_ClhashlookupSettings':"/api/icapeg/clhsettings/get"};
+        mapDataToFormUI(data_get_map2).done(function(data){
             // place actions to run after load, for example update form styles.
             console.log(data)
             formatTokenizersUI();
