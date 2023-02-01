@@ -34,7 +34,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
     </div>
-    <div id="clhashlookup" class="tab-pane fade in">
+    <div id="clhashlookup" class="tab-pane ">
         </div>
     </div>
 </div>
