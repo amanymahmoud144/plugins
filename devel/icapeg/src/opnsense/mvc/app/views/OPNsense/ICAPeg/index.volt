@@ -27,6 +27,17 @@ POSSIBILITY OF SUCH DAMAGE.
 #}
 
 <h1>App configuration</h1>
+<ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
+    <li class="active"><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
+    <li><a data-toggle="tab" href="#clhashlookup">{{ lang._('Clhashlookup') }}</a></li>
+</ul>
+<div class="tab-content content-box tab-content">
+    <div id="general" class="tab-pane fade in active">
+    </div>
+    <div id="antivirus" class="tab-pane fade in">
+        </div>
+    </div>
+</div>
 
 <script>
     $( document ).ready(function() {
