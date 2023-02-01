@@ -30,9 +30,12 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <script>
     $( document ).ready(function() {
-        var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
+        var data_get_map = {'frm_general_settings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map).done(function(data){
             // place actions to run after load, for example update form styles.
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
         });
 
         // link save button to API set action

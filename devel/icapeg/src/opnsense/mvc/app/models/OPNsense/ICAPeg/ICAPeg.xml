@@ -46,34 +46,43 @@
                 <Required>Y</Required>
             </clhashlookup_resp_mode>
             <clhashlookup_process_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
             </clhashlookup_process_extensions>
             <clhashlookup_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
             </clhashlookup_reject_extensions>
             <clhashlookup_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
+                <default>TXT,PDF,EXE,ZIP,DOCX,DOC</default>
                 <multiple>Y</multiple>
                 <Required>Y</Required>
                     <OptionValues>
-                        <TEXT>Text files</TEXT>
-                        <EXECUTABLE>Executables</EXECUTABLE>
-                        <MSOFFICE>Microsoft office files</MSOFFICE>
-                    </OptionValues>
+                    <TXT>txt</TXT>
+                    <PDF>pdf</PDF>
+                    <EXE>exe</EXE>
+                    <ZIP>zip</ZIP>
+                    <DOCX>docx</DOCX>
+                    <DOC>doc</DOC>
+                </OptionValues>
             </clhashlookup_bypass_extensions>
             <clhashlookup_timeout type="NumericField">
                 <default>1000</default>
