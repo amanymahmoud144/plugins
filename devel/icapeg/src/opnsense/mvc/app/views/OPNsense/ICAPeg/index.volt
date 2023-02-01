@@ -42,7 +42,7 @@ POSSIBILITY OF SUCH DAMAGE.
             </div> 
         </div>
     </div>
-    <div id="clhashlookup" class="tab-pane fade in active">
+    <div id="clhashlookup" class="tab-pane">
         <div class="content-box" style="padding-bottom: 1.5em;">
             <h1>Clhashlookup Service Configuration </h1>
             {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_clhashlookup_settings'])}}
