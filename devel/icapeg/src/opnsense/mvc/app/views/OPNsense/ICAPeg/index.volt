@@ -34,9 +34,11 @@ POSSIBILITY OF SUCH DAMAGE.
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
         {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
+        <button class="btn btn-primary"  id="saveActgeneral" type="button"><b>{{ lang._('Save') }}</b></button>
     </div>
     <div id="clhashlookup" class="tab-pane fade in">
-        {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_ClhashlookupSettings'])}}
+        {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
+        <button class="btn btn-primary"  id="saveActclhashlookup" type="button"><b>{{ lang._('Save') }}</b></button>
         </div>
     </div>
 </div>
@@ -60,7 +62,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 
         // link save button to API set action
-        $("#saveAct").click(function(){
+        $("#saveActgeneral").click(function(){
             saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
                 // action to run after successful save, for example reconfigure service.
                 ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
@@ -69,6 +71,16 @@ POSSIBILITY OF SUCH DAMAGE.
                 });
             });
         });
+        $("#saveActclhashlookup").click(function(){
+            saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_ClhashlookupSettings',callback_ok=function(){
+                // action to run after successful save, for example reconfigure service.
+                ajaxCall(url="/api/icapeg/service/reload", sendData={},callback=function(data,status) {
+                    // action to run after reload
+                    $("#responseMsg").html(data['status']);
+                });
+            });
+        });
+
 
     });
 </script>
@@ -81,7 +93,8 @@ POSSIBILITY OF SUCH DAMAGE.
     {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
 </div> -->
 
-<div class="col-md-12">
+<!-- <div class="col-md-12">
     
     <button class="btn btn-primary"  id="saveAct" type="button"><b>{{ lang._('Save') }}</b></button>
 </div>
+ -->
