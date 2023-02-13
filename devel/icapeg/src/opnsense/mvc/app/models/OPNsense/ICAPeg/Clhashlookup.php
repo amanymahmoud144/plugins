@@ -1,7 +1,7 @@
 <?php
 
 /**
- *    Copyright (C) 2015-2019 Deciso B.V.
+ *    Copyright (C) 2015 Deciso B.V.
  *
  *    All rights reserved.
  *
@@ -28,16 +28,10 @@
  *
  */
 
-namespace OPNsense\ICAPeg\Api;
+namespace OPNsense\ICAPeg;
 
-use OPNsense\Base\ApiMutableModelControllerBase;
+use OPNsense\Base\BaseModel;
 
-/**
- * a simplified settings controller for our ICAPeg app, uses our ApiMutableModelControllerBase type
- * @package OPNsense\ICAPeg
- */
-class SimplifiedSettingsController extends ApiMutableModelControllerBase
+class clhashlookup extends BaseModel
 {
-    protected static $internalModelName = 'icapeg';
-    protected static $internalModelClass = 'OPNsense\ICAPeg\ICAPeg';
 }

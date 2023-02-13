@@ -48,6 +48,14 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
+        var data_get_map2= {'frm_ClhashlookupSettings':"/api/icapeg/settings/get"};
+        mapDataToFormUI(data_get_map2).done(function(data){
+            // place actions to run after load, for example update form styles.
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
+        });
+
 
         // link save button to API set action
         $("#saveAct").click(function(){
