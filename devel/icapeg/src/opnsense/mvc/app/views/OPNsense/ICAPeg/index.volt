@@ -59,8 +59,6 @@ POSSIBILITY OF SUCH DAMAGE.
             formatTokenizersUI();
             $('.selectpicker').selectpicker('refresh');
         });
-
-
         // link save button to API set action
         $("#saveActgeneral").click(function(){
             saveFormToEndpoint(url="/api/icapeg/settings/set",formid='frm_GeneralSettings',callback_ok=function(){
