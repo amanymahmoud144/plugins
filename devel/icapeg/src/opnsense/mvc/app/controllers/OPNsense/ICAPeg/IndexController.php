@@ -38,12 +38,13 @@ class IndexController extends \OPNsense\Base\IndexController
 {
     public function indexAction()
     {
-         // pick the template to serve to our users.
-         $this->view->pick('OPNsense/ICAPeg/index');
+        
         // fetch form data "general" in
         $this->view->generalForm = $this->getForm("general");
         // fetch form data "clhashlookup" in
         $this->view->clhashlookupForm = $this->getForm("clhashlookup");
+         // pick the template to serve to our users.
+         $this->view->pick('OPNsense/ICAPeg/index');
       
        
     }

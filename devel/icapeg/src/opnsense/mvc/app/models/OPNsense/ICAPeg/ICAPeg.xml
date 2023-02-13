@@ -32,6 +32,117 @@
                 <Required>Y</Required>
             </DebuggingHeaders>
          </general>
+         <clhashlookup>
+            <!-- fields -->
+            <clhashlookupHeader type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clhashlookupHeader>
+            <clhashlookup_req_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clhashlookup_req_mode>
+            <clhashlookup_resp_mode type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </clhashlookup_resp_mode>
+            <clhashlookup_process_extensions type="OptionField">
+                <default>txt,pdf,exe,zip,docx,doc</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                    <txt value="txt">txt</txt>
+                    <pdf value="pdf">pdf</pdf>
+                    <exe value="exe">exe</exe>
+                    <zip value="zip">zip</zip>
+                    <docx value="docx">docx</docx>
+                    <doc value="doc">doc</doc>
+                </OptionValues>
+            </clhashlookup_process_extensions>
+            <clhashlookup_reject_extensions type="OptionField">
+                <default>txt,pdf,exe,zip,docx,doc</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                    <txt value="txt">txt</txt>
+                    <pdf value="pdf">pdf</pdf>
+                    <exe value="exe">exe</exe>
+                    <zip value="zip">zip</zip>
+                    <docx value="docx">docx</docx>
+                    <doc value="doc">doc</doc>
+                </OptionValues>
+            </clhashlookup_reject_extensions>
+            <clhashlookup_bypass_extensions type="OptionField">
+                <default>txt,pdf,exe,zip,docx,doc</default>
+                <multiple>Y</multiple>
+                <Required>Y</Required>
+                    <OptionValues>
+                    <txt value="txt">txt</txt>
+                    <pdf value="pdf">pdf</pdf>
+                    <exe value="exe">exe</exe>
+                    <zip value="zip">zip</zip>
+                    <docx value="docx">docx</docx>
+                    <doc value="doc">doc</doc>
+                </OptionValues>
+            </clhashlookup_bypass_extensions>
+            <clhashlookup_timeout type="NumericField">
+                <default>1000</default>
+                <Required>N</Required>
+            </clhashlookup_timeout>
+            <clhashlookup_fail_threshold type="NumericField">
+                <default>10</default>
+                <Required>N</Required>
+            </clhashlookup_fail_threshold>
+            <clhashlookup_scan_url type="TextField">
+                <default>https://www.clhashlookup.com/vtapi/v2/file/scan</default>
+                <Required>Y</Required>
+            </clhashlookup_scan_url>
+            <clhashlookup_shadow_service type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clhashlookup_shadow_service>
+            <clhashlookup_preview_bytes type="NumericField">
+                <default>1024</default>
+                <Required>N</Required>
+            </clhashlookup_preview_bytes>
+            <clhashlookup_preview_enabled type="BooleanField">
+                <default>1</default>
+                <Required>N</Required>
+            </clhashlookup_preview_enabled>
+            <clhashlookup_max_filesize type="NumericField">
+                <default>0</default>
+                <Required>N</Required>
+            </clhashlookup_max_filesize>
+            <clhashlookup_return_original_if_max_file_size_exceeded type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clhashlookup_return_original_if_max_file_size_exceeded>
+            <clhashlookup_verify_server_cert type="BooleanField">
+                <default>1</default>
+                <Required>N</Required>
+            </clhashlookup_verify_server_cert>
+
+            <clhashlookup_bypass_on_api_error type="BooleanField">
+                <default>0</default>
+                <Required>N</Required>
+            </clhashlookup_bypass_on_api_error>
+
+            <clhashlookup_http_exception_has_body type="BooleanField">
+                <default>1</default>
+                <Required>N</Required>
+            </clhashlookup_http_exception_has_body >
+
+            <clhashlookup_http_exception_response_code type="NumericField">
+                <default>0</default>
+                <Required>N</Required>
+            </clhashlookup_http_exception_response_code>
+
+            <clhashlookup_exception_page type="TextField">
+                <default>"./temp/exception-page.html"</default>
+                <Required>Y</Required>
+            </clhashlookup_exception_page>
+         </clhashlookup>
+         
     </items>
 
 </model>
