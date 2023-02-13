@@ -36,7 +36,7 @@ POSSIBILITY OF SUCH DAMAGE.
         {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
     </div>
     <div id="clhashlookup" class="tab-pane fade in">
-        {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
+        {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_ClhashlookupSettings'])}}
         </div>
     </div>
 </div>
@@ -45,6 +45,13 @@ POSSIBILITY OF SUCH DAMAGE.
     $( document ).ready(function() {
         var data_get_map = {'frm_GeneralSettings':"/api/icapeg/settings/get"};
         mapDataToFormUI(data_get_map).done(function(data){
+            // place actions to run after load, for example update form styles.
+            console.log(data)
+            formatTokenizersUI();
+            $('.selectpicker').selectpicker('refresh');
+        });
+        var data_get_map2 = {'frm_ClhashlookupSettings':"/api/icapeg/settings/get"};
+        mapDataToFormUI(data_get_map2).done(function(data){
             // place actions to run after load, for example update form styles.
             console.log(data)
             formatTokenizersUI();
