@@ -26,17 +26,19 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #}
 
-<h1>App configuration</h1>
+
 <ul class="nav nav-tabs" data-tabs="tabs" id="maintabs">
     <li class="active"><a data-toggle="tab" href="#general">{{ lang._('General') }}</a></li>
     <li><a data-toggle="tab" href="#clhashlookup">{{ lang._('Clhashlookup') }}</a></li>
 </ul>
 <div class="tab-content content-box tab-content">
     <div id="general" class="tab-pane fade in active">
+        <h1>General Configuration</h1>
         {{ partial("layout_partials/base_form",['fields':generalForm,'id':'frm_GeneralSettings'])}}
         <button class="btn btn-primary"  id="saveActgeneral" type="button"><b>{{ lang._('Save') }}</b></button>
     </div>
     <div id="clhashlookup" class="tab-pane fade in">
+        <h1>Clhashlookup Service Configuration</h1>
         {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
         <button class="btn btn-primary"  id="saveActclhashlookup" type="button"><b>{{ lang._('Save') }}</b></button>
         </div>
