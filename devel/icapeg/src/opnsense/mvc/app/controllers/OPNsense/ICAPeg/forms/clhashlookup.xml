@@ -26,20 +26,6 @@
                 unknown = system couldn't find out the type of the file</help>
     </field>
     <field>
-        <id>icapeg.clhashlookup.clhashlookup_reject_extensions</id>
-        <label>clhashlookup_reject_extensions</label>
-        <type>select_multiple</type>
-        <help>Choose for which Options. Everything except the ones in bypass, 
-                unknown = system couldn't find out the type of the file</help>
-    </field>
-    <field>
-        <id>icapeg.clhashlookup.clhashlookup_bypass_extensions</id>
-        <label>clhashlookup_bypass_extensions</label>
-        <type>select_multiple</type>
-        <help> Choose for which Options. Everything except the ones in bypass, 
-                unknown = system couldn't find out the type of the file</help>
-    </field>
-    <field>
         <id>icapeg.clhashlookup.clhashlookup_timeout</id>
         <label>Timeout</label>
         <type>text</type>

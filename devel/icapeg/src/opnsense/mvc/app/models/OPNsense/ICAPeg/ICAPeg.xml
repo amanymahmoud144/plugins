@@ -59,32 +59,6 @@
                     <doc value="doc">doc</doc>
                 </OptionValues>
             </clhashlookup_process_extensions>
-            <clhashlookup_reject_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                    <OptionValues>
-                    <txt value="txt">txt</txt>
-                    <pdf value="pdf">pdf</pdf>
-                    <exe value="exe">exe</exe>
-                    <zip value="zip">zip</zip>
-                    <docx value="docx">docx</docx>
-                    <doc value="doc">doc</doc>
-                </OptionValues>
-            </clhashlookup_reject_extensions>
-            <clhashlookup_bypass_extensions type="OptionField">
-                <default>txt,pdf,exe,zip,docx,doc</default>
-                <multiple>Y</multiple>
-                <Required>Y</Required>
-                    <OptionValues>
-                    <txt value="txt">txt</txt>
-                    <pdf value="pdf">pdf</pdf>
-                    <exe value="exe">exe</exe>
-                    <zip value="zip">zip</zip>
-                    <docx value="docx">docx</docx>
-                    <doc value="doc">doc</doc>
-                </OptionValues>
-            </clhashlookup_bypass_extensions>
             <clhashlookup_timeout type="NumericField">
                 <default>1000</default>
                 <Required>N</Required>

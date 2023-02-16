@@ -156,7 +156,7 @@ preview_bytes = "1024" #byte
 preview_enabled = true# options send preview header or not
 bypass_extensions = ["*"]
 process_extensions = ["pdf","exe", "zip"] # * = everything except the ones in bypass, unknown = system couldn't find out the type of the file
-reject_extensions = ["docx"]
+reject_extensions = []
 scan_url = "https://hashlookup.circl.lu/lookup/sha256/" #
 timeout  = 300 #seconds , ICAP will return 408 - Request timeout
 fail_threshold = 2
