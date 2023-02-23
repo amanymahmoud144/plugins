@@ -41,14 +41,6 @@ POSSIBILITY OF SUCH DAMAGE.
         <h1>Clhashlookup Service Configuration</h1>
         {{ partial("layout_partials/base_form",['fields':clhashlookupForm,'id':'frm_ClhashlookupSettings'])}}
         <button class="btn btn-primary"  id="saveActclhashlookup" type="button"><b>{{ lang._('Save') }}</b></button>
-        <button class="btn btn-primary __mb" id="RefreshCheckList" type="button"><b>{{ lang._('Refresh') }}</b> <i id="refresh_progress" class=""></i></button>
-        <button class="btn btn-primary __mb"  id="applyAct" type="button"><b>{{ lang._('Apply') }}</b> <i id="applyAct_progress" class=""></i></button>
-        <div class="__mb">
-            {{ partial("layout_partials/base_form",['fields':testingCreateForm,'id':'frm_TestingCreate'])}}
-            <button class="btn btn-primary" id="CreateKeytab" type="button"><b>{{ lang._('Create Key Table') }}</b></button>
-            <button class="btn btn-primary" id="DeleteKeytab" type="button"><b>{{ lang._('Delete Key Table') }}</b></button>
-            <button class="btn btn-primary" id="ShowKeytab" type="button"><b>{{ lang._('Show Key Table') }}</b></button>
-        </div>
     </div>
     </div>
 </div>
