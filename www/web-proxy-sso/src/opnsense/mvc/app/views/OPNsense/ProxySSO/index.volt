@@ -177,7 +177,6 @@
 
         {{ partial("layout_partials/base_form",['fields':checkListForm,'id':'frm_CheckList'])}}
         <hr/>
-        <button class="btn btn-primary __mb" id="RefreshCheckList" type="button"><b>{{ lang._('Refresh') }}</b> <i id="refresh_progress" class=""></i></button>
 
         <div class="__mb">
             {{ partial("layout_partials/base_form",['fields':testingCreateForm,'id':'frm_TestingCreate'])}}
